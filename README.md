@@ -1,4 +1,4 @@
-**English** / [한국어](README_ko.md)
+﻿**English** / [한국어](README_ko.md)
 
 # Preset-Franchises_in_Korea
 Preset which help JOSM users map main franchises in South Korea
@@ -15,3 +15,6 @@ applied preset URL in GitHub
 # Update
 ## 2018-10-28
 * Upload to Github
+* Add brand:en tag
+* Add Lotteria
+* Improve readability for the XML file
