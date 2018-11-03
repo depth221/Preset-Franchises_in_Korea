@@ -306,7 +306,7 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand" value="파파이스"/>
         <key key="brand:en" value="Popeyes"/>
         <key key="operator" value="(주)TS 푸드앤시스템"/>
-        <key key="operator:en" value="TS Food &amp System"/>
+        <key key="operator:en" value="TS Food &amp; System"/>
         <text default="파파이스" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="파파이스" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Popeyes" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
