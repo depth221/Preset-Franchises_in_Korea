@@ -13,6 +13,19 @@ in JOSM
 applied preset URL in GitHub
 
 # Update
+## 2018-11-03
+* Modify the icon for Fast Foods
+* Add Mom's Touch, Burger King, Popeyes, and KFC (Fast Foods)
+* Add Bonjuk, and JukStory (Congee)
+* Add Hansot Lunch (Lunch)
+* Add combo boxes for takeaway (yes, only) in Lunch, Congee, Bakery, and Fast Foods
+* Add combo boxes for takeaway (yes, only, no) in Cafe
+* Add icons (Juk.svg for Congee, Lunch.svg for Lunch)
+* Add a logo (Ministop.svg for MINISTOP)
+* Add a file for icons/logos attibution (Preset-Franchises_in_Korea/Franchises in Korea/attribution.html)
+* Move LICENSE file to Franchises in Korea directory
+* some fix for README, README_ko
+
 ## 2018-11-01
 * Add Paik's Coffee
 

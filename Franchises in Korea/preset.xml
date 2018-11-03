@@ -19,7 +19,31 @@ If you want to share your custom tags with other users, please look through the 
  * https://josm.openstreetmap.de/wiki/TaggingPresets
  * https://wiki.openstreetmap.org/wiki/Customising_JOSM_Presets
 -->
-<group icon="flag/South_Korea.svg" name="Franchises in Korea" ko.name="한국의 프랜차이즈">
+<group icon="icon/South_Korea.svg" name="Franchises in Korea" ko.name="한국의 프랜차이즈">
+
+<group icon="icon/Lunch.svg" name="Lunch" ko.name="도시락">
+    <item icon="icon/Lunch.svg" name="Hansot Lunch" ko.name="한솥도시락" type="node,relation,closedway,multipolygon">
+        <label text="Hansot Lunch" ko.text="한솥도시락"/>
+        <label text="※ English name is unofficial!" ko.text="※ 영어 명칭은 비공식입니다!"/>
+        <key key="amenity" value="restaurant"/>
+        <key key="cuisine" value="asian"/>
+        <key key="brand" value="한솥도시락"/>
+        <key key="brand:en" value="Hansot Lunch"/>
+        <key key="operator" value="한솥"/>
+        <key key="operator:en" value="Hansot"/>
+        <text default="한솥도시락" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="한솥도시락" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="Hansot Lunch" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00"/>
+        <key key="website" value="https://www.hsd.co.kr/"/>
+        <key key="brand:wikidata" value="Q55730575"/>
+        <key key="brand:wikipedia" value="ko:한솥도시락"/>
+    </item>
+</group>
+
+
 <group icon="presets/shop/variety_store.svg" name="Variety Store" ko.name="잡화점">
     <item icon="presets/shop/variety_store.svg" name="DAISO" ko.name="다이소" type="node,relation,closedway,multipolygon">
         <label text="DAISO" ko.text="다이소"/>
@@ -53,6 +77,7 @@ If you want to share your custom tags with other users, please look through the 
         <text default="トゥレジュール" key="name:ja" text="Name(Japanese)" ko.text="점포명(일본어)"/>
         <text default="多乐之日" key="name:zh" text="Name(Chinese)" ko.text="점포명(중국어)"/>
         <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="06:30-24:00,07:30-24:00,08:00-24:00,08:00-22:00,07:00-21:30"/>
         <key key="website" value="https://www.tlj.co.kr:7008/product/new.asp"/>
         <key key="brand:wikidata" value="Q3535609"/>
@@ -70,6 +95,7 @@ If you want to share your custom tags with other users, please look through the 
         <text default="Paris Baguette" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
         <text default="巴黎贝甜" key="name:zh" text="Name(Chinese)" ko.text="점포명(중국어)"/>
         <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-24:00,09:00-22:00"/>
         <key key="website" value="https://www.paris.co.kr/main"/>
         <key key="brand:wikidata" value="Q12621461"/>
@@ -77,6 +103,42 @@ If you want to share your custom tags with other users, please look through the 
     </item>
 </group>
 
+
+<group icon="icon/Juk.svg" name="Congee(Juk)" ko.name="죽">
+    <item icon="icon/Juk.svg" name="Bonjuk" ko.name="본죽" type="node,relation,closedway,multipolygon">
+        <label text="Bonjuk" ko.text="본죽"/>
+        <key key="amenity" value="restaurant"/>
+        <key key="cuisine" value="congee"/>
+        <key key="brand" value="본죽"/>
+        <key key="brand:en" value="Bonjuk"/>
+        <key key="operator" value="본아이에프"/>
+        <key key="operator:en" value="BonIF"/>
+        <text default="본죽" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="본죽" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="Bonjuk" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00"/>
+        <key key="website" value="http://www.bonjuk.co.kr/default.asp"/>
+    </item>
+
+    <item icon="icon/Juk.svg" name="JukStory" ko.name="죽이야기" type="node,relation,closedway,multipolygon">
+        <label text="JukStory" ko.text="죽이야기"/>
+        <key key="amenity" value="restaurant"/>
+        <key key="cuisine" value="congee"/>
+        <key key="brand" value="죽이야기"/>
+        <key key="brand:en" value="JukStory"/>
+        <key key="operator" value="대호가"/>
+        <key key="operator:en" value="Daehoga"/>
+        <text default="죽이야기" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="죽이야기" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="JukStory" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00"/>
+        <key key="website" value="http://www.jukstory.com/main.php"/>
+    </item>
+</group>
 
 <group icon="presets/food/cafe.svg" name="Cafe" ko.name="카페">
     <item icon="presets/food/cafe.svg" name="Paik's Coffee" ko.name="빽다방" type="node,relation,closedway,multipolygon">
@@ -90,9 +152,10 @@ If you want to share your custom tags with other users, please look through the 
         <text default="Paik's Coffee" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
         <text default="빽다방" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-24:00"/>
         <key key="website" value="http://paikdabang.com/"/>
-        <key key="brand:wikidata" value="Q55730575"/>
+        <key key="brand:wikidata" value="Q12624133"/>
         <key key="brand:wikipedia" value="ko:빽다방"/>
     </item>
 
@@ -109,6 +172,7 @@ If you want to share your custom tags with other users, please look through the 
         <text default="스타벅스" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="星巴克" key="name:zh" text="Name(Chinese)" ko.text="점포명(중국어)"/>
         <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 07:00-23:00; Sa-Su 08:00-23:00,07:00-23:00,08:00-23:00"/>
         <key key="website" value="http://www.istarbucks.co.kr/index.do"/>
         <key key="brand:wikidata" value="Q37158"/>
@@ -126,6 +190,7 @@ If you want to share your custom tags with other users, please look through the 
         <text default="이디야커피" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Ediya Coffee" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
         <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="08:00-22:00,09:00-22:00"/>
         <key key="website" value="https://www.ediya.com/"/>
         <key key="brand:wikidata" value="Q12611298"/>
@@ -145,6 +210,7 @@ If you want to share your custom tags with other users, please look through the 
         <text default="ザ・コーヒービーン &amp; ティーリーフ" key="name:ja" text="Name(Japanese)" ko.text="점포명(일본어)"/>
         <text default="香啡缤" key="name:zh" text="Name(Chinese)" ko.text="점포명(중국어)"/>
         <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-23:00"/>
         <key key="website" value="http://www.coffeebeankorea.com/main/main.asp"/>
         <key key="brand:wikidata" value="Q1141384"/>
@@ -162,6 +228,7 @@ If you want to share your custom tags with other users, please look through the 
         <text default="할리스커피" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Holly's Coffee" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
         <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-23:00,08:00-24:00,08:00-01:30,09:00-24:00"/>
         <key key="website" value="https://www.hollys.co.kr/"/>
         <key key="brand:wikidata" value="Q12624386"/>
@@ -170,8 +237,8 @@ If you want to share your custom tags with other users, please look through the 
 </group>
 
 
-<group icon="presets/shop/convenience.svg" name="Fast Foods" ko.name="패스트푸드">
-    <item icon="presets/shop/convenience.svg" name="Lotteria" ko.name="롯데리아" type="node,relation,closedway,multipolygon">
+<group icon="presets/food/fast_food.svg" name="Fast Foods" ko.name="패스트푸드">
+    <item icon="presets/food/fast_food.svg" name="Lotteria" ko.name="롯데리아" type="node,relation,closedway,multipolygon">
         <label text="Lotteria" ko.text="롯데리아"/>
         <key key="amenity" value="fast_food"/>
         <key key="cuisine" value="burger"/>
@@ -185,16 +252,97 @@ If you want to share your custom tags with other users, please look through the 
         <text default="ロッテリア" key="name:ja" text="Name(Japanese)" ko.text="점포명(일본어)"/>
         <text default="乐天利" key="name:zh" text="Name(Chinese)" ko.text="점포명(중국어)"/>
         <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00,10:00-22:00,10:00-24:00"/>
         <key key="website" value="http://www.lotteria.com/"/>
         <key key="brand:wikidata" value="Q249525"/>
         <key key="brand:wikipedia" value="ko:롯데리아"/>
     </item>
+
+    <item icon="presets/food/fast_food.svg" name="Mom's Touch" ko.name="맘스터치" type="node,relation,closedway,multipolygon">
+        <label text="Mom's Touch" ko.text="맘스터치"/>
+        <key key="amenity" value="fast_food"/>
+        <key key="cuisine" value="burger"/>
+        <key key="brand" value="맘스터치"/>
+        <key key="brand:en" value="Mom's Touch"/>
+        <key key="operator" value="해마로푸드서비스(주)"/>
+        <key key="operator:en" value="Haemaro Food Service"/>
+        <text default="맘스터치" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="맘스터치" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="Mom's Touch" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-23:00,11:00-23:00,11:00-22:30,12:00-23:30,12:00-23:00"/>
+        <key key="website" value="http://www.momstouch.co.kr/main/main.php"/>
+        <key key="brand:wikidata" value="Q23044856"/>
+        <key key="brand:wikipedia" value="ko:맘스터치"/>
+    </item>
+
+    <item icon="presets/food/fast_food.svg" name="Burger King" ko.name="버거킹" type="node,relation,closedway,multipolygon">
+        <label text="Burger King" ko.text="버거킹"/>
+        <key key="amenity" value="fast_food"/>
+        <key key="cuisine" value="burger"/>
+        <key key="brand" value="버거킹"/>
+        <key key="brand:en" value="Burger King"/>
+        <key key="operator" value="비케이알"/>
+        <key key="operator:en" value="BKR"/>
+        <text default="버거킹" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="버거킹" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="Burger King" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+        <text default="バーガーキング" key="name:ja" text="Name(Japanese)" ko.text="점포명(일본어)"/>
+        <text default="漢堡王" key="name:zh" text="Name(Chinese)" ko.text="점포명(중국어)"/>
+        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-23:00,10:00-22:00,10:00-24:00"/>
+        <key key="website" value="http://www.burgerking.co.kr/"/>
+        <key key="brand:wikidata" value="Q177054"/>
+        <key key="brand:wikipedia" value="ko:버거킹"/>
+    </item>
+
+    <item icon="presets/food/fast_food.svg" name="Popeyes" ko.name="파파이스" type="node,relation,closedway,multipolygon">
+        <label text="Popeyes" ko.text="파파이스"/>
+        <key key="amenity" value="fast_food"/>
+        <key key="cuisine" value="burger"/>
+        <key key="brand" value="파파이스"/>
+        <key key="brand:en" value="Popeyes"/>
+        <key key="operator" value="(주)TS 푸드앤시스템"/>
+        <key key="operator:en" value="TS Food & System"/>
+        <text default="파파이스" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="파파이스" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="Popeyes" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+        <text default="ポパイズ" key="name:ja" text="Name(Japanese)" ko.text="점포명(일본어)"/>
+        <text default="大力水手炸雞" key="name:zh" text="Name(Chinese)" ko.text="점포명(중국어)"/>
+        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-22:00"/>
+        <key key="website" value="http://www.popeyes.co.kr/"/>
+        <key key="brand:wikidata" value="Q1330910"/>
+        <key key="brand:wikipedia" value="ko:파파이스"/>
+    </item>
+
+    <item icon="presets/food/fast_food.svg" name="KFC" type="node,relation,closedway,multipolygon">
+        <label text="KFC"/>
+        <key key="amenity" value="fast_food"/>
+        <key key="cuisine" value="burger"/>
+        <key key="brand" value="KFC"/>
+        <key key="operator" value="케이에프씨코리아"/>
+        <key key="operator:en" value="KFC Korea"/>
+        <text default="KFC" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="KFC" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="KFC" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+        <text default="肯德基" key="name:zh" text="Name(Chinese)" ko.text="점포명(중국어)"/>
+        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-23:00,10:00-24:00,24/7"/>
+        <key key="website" value="http://www.kfckorea.com/"/>
+        <key key="brand:wikidata" value="Q524757"/>
+        <key key="brand:wikipedia" value="ko:KFC"/>
+    </item>
 </group>
 
 
 <group icon="presets/shop/convenience.svg" name="Convenience Store" ko.name="편의점">
-    <item icon="presets/shop/convenience.svg" name="MINISTOP" ko.name="미니스톱" type="node,relation,closedway,multipolygon">
+    <item icon="logo/Ministop.svg" name="MINISTOP" ko.name="미니스톱" type="node,relation,closedway,multipolygon">
         <label text="MINISTOP" ko.text="미니스톱"/>
         <key key="shop" value="convenience"/>
         <key key="brand" value="MINISTOP"/>
