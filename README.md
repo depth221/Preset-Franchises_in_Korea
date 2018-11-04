@@ -13,6 +13,9 @@ in JOSM
 applied preset URL in GitHub
 
 # Update
+## 2018-11-04
+* Add logos for The Coffee Bean & Tea Leaf, Burger King, KFC, Seven-Eleven, CU, and GS25
+
 ## 2018-11-03
 * Modify the icon for Fast Foods
 * Add Mom's Touch, Burger King, Popeyes, and KFC (Fast Foods)

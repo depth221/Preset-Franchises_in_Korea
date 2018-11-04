@@ -197,7 +197,7 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikipedia" value="ko:이디야커피"/>
     </item>
 
-    <item icon="presets/food/cafe.svg" name="The Coffee Bean &amp; Tea Leaf" ko.name="커피빈" type="node,relation,closedway,multipolygon">
+    <item icon="logo/Coffee_Bean.png" name="The Coffee Bean &amp; Tea Leaf" ko.name="커피빈" type="node,relation,closedway,multipolygon">
         <label text="The Coffee Bean &amp; Tea Leaf" ko.text="커피빈"/>
         <key key="amenity" value="cafe"/>
         <key key="cuisine" value="coffee_shop"/>
@@ -278,7 +278,7 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikipedia" value="ko:맘스터치"/>
     </item>
 
-    <item icon="presets/food/fast_food.svg" name="Burger King" ko.name="버거킹" type="node,relation,closedway,multipolygon">
+    <item icon="logo/Burger_King.svg" name="Burger King" ko.name="버거킹" type="node,relation,closedway,multipolygon">
         <label text="Burger King" ko.text="버거킹"/>
         <key key="amenity" value="fast_food"/>
         <key key="cuisine" value="burger"/>
@@ -320,7 +320,7 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikipedia" value="ko:파파이스"/>
     </item>
 
-    <item icon="presets/food/fast_food.svg" name="KFC" type="node,relation,closedway,multipolygon">
+    <item icon="logo/KFC.png" name="KFC" type="node,relation,closedway,multipolygon">
         <label text="KFC"/>
         <key key="amenity" value="fast_food"/>
         <key key="cuisine" value="burger"/>
@@ -359,7 +359,7 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikipedia" value="ko:미니스톱"/>
     </item>
 
-    <item icon="presets/shop/convenience.svg" name="Seven-Eleven" ko.name="세븐일레븐" type="node,relation,closedway,multipolygon">
+    <item icon="logo/Seven_Eleven.svg" name="Seven-Eleven" ko.name="세븐일레븐" type="node,relation,closedway,multipolygon">
         <label text="Seven-Eleven" ko.text="세븐일레븐"/>
         <key key="shop" value="convenience"/>
         <key key="brand" value="7 ELEVEN"/>
@@ -376,7 +376,7 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikipedia" value="ko:세븐일레븐"/>
     </item>
 
-    <item icon="presets/shop/convenience.svg" name="CU" type="node,relation,closedway,multipolygon">
+    <item icon="logo/CU.svg" name="CU" type="node,relation,closedway,multipolygon">
         <label text="CU"/>
         <key key="shop" value="convenience"/>
         <key key="brand" value="CU"/>
@@ -391,7 +391,7 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikipedia" value="ko:CU (편의점)"/>
     </item>
 
-    <item icon="presets/shop/convenience.svg" name="GS25" type="node,relation,closedway,multipolygon">
+    <item icon="logo/GS25.svg" name="GS25" type="node,relation,closedway,multipolygon">
         <label text="GS25"/>
         <key key="shop" value="convenience"/>
         <key key="brand" value="GS25"/>
@@ -441,7 +441,7 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikidata" value="Q55643246"/>
         <key key="brand:wikipedia" value="ko:올리브영"/>
     </item>
-
 </group>
+
 </group>
 </presets>
