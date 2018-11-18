@@ -17,6 +17,7 @@ applied preset URL in GitHub
 * Deal with name:xx tags as default except in Korean and English
 * Add payments
 ** Values of Visa, Mastercard, Unionpay, JCB, American Express, Diners Club, and Discover, are yes as default
+* Fix a bug in which the flag can't be loaded
 
 ## 2018-11-04
 * Add logos for The Coffee Bean & Tea Leaf, Burger King, KFC, Seven-Eleven, CU, and GS25
