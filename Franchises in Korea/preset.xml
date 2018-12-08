@@ -2,7 +2,7 @@
 <presets
 xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
 author="LuxuryCoop"
-version="1_2018-12-08"
+version="2_2018-12-08"
 description="Main franchises in South Korea"
 ko.description="대한민국 내의 주요 프랜차이즈"
 shortdescription="Franchises in Korea"
@@ -42,6 +42,14 @@ If you want to share your custom tags with other users, please look through the 
 		ko.display_values="학생 할인,일부 게임 실행 시 시간 차감 가속,학생 할인 + 일부 게임 실행 시 시간 차감 가속"
 	/>
 	<label text="(※ Exist value in 'description' tag will be removed!)" ko.text="(※ 기존 'description' 태그의 값은 삭제됩니다!)"/>
+</chunk>
+
+<chunk id="takeaway">
+	<combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only" ko.display_values="가능,테이크 아웃만 가능"/>
+</chunk>
+
+<chunk id="takeaway_including_no">
+	<combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no" ko.display_values="가능,테이크 아웃만 가능,불가능"/>
 </chunk>
 
 <chunk id="wheelchair">
@@ -87,7 +95,7 @@ If you want to share your custom tags with other users, please look through the 
         <text default="한솥도시락" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Hansot Lunch" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
         <reference ref="level_1"/>
-        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
+        <reference ref="takeaway"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00"/>
 		<reference ref="wheelchair"/>
 		
@@ -151,7 +159,7 @@ If you want to share your custom tags with other users, please look through the 
 		<key key="name:ja" value="トゥレジュール"/>
 		<key key="name:zh" value="多乐之日"/>
         <reference ref="level_1"/>
-        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
+        <reference ref="takeaway"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="06:30-24:00,07:30-24:00,08:00-24:00,08:00-22:00,07:00-21:30"/>
 		<reference ref="wheelchair"/>
 		
@@ -180,7 +188,7 @@ If you want to share your custom tags with other users, please look through the 
         <text default="Paris Baguette" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
 		<key key="name:zh" value="巴黎贝甜"/>
         <reference ref="level_1"/>
-        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
+        <reference ref="takeaway"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-24:00,09:00-22:00"/>
 		<reference ref="wheelchair"/>
 		
@@ -213,7 +221,7 @@ If you want to share your custom tags with other users, please look through the 
         <text default="본죽" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Bonjuk" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
         <reference ref="level_1"/>
-        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
+        <reference ref="takeaway"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00"/>
 		<reference ref="wheelchair"/>
 		
@@ -241,7 +249,7 @@ If you want to share your custom tags with other users, please look through the 
         <text default="죽이야기" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="JukStory" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
         <reference ref="level_1"/>
-        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
+        <reference ref="takeaway"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00"/>
 		<reference ref="wheelchair"/>
 		
@@ -270,7 +278,7 @@ If you want to share your custom tags with other users, please look through the 
         <text default="Paik's Coffee" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
         <text default="빽다방" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <reference ref="level_1"/>
-        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no"/>
+        <reference ref="takeaway_including_no"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-24:00"/>
 		<reference ref="wheelchair"/>
 		
@@ -301,7 +309,7 @@ If you want to share your custom tags with other users, please look through the 
 		<key key="name:ja" value="スターバックス"/>
 		<key key="name:zh" value="星巴克"/>
         <reference ref="level_1"/>
-        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no"/>
+        <reference ref="takeaway_including_no"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 07:00-23:00; Sa-Su 08:00-23:00,07:00-23:00,08:00-23:00"/>
 		<reference ref="wheelchair"/>
 		
@@ -330,7 +338,7 @@ If you want to share your custom tags with other users, please look through the 
         <text default="이디야커피" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Ediya Coffee" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
         <reference ref="level_1"/>
-        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no"/>
+        <reference ref="takeaway_including_no"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="08:00-22:00,09:00-22:00"/>
 		<reference ref="wheelchair"/>
 		
@@ -361,7 +369,7 @@ If you want to share your custom tags with other users, please look through the 
 		<key key="name:ja" value="ザ・コーヒービーン &amp; ティーリーフ"/>
 		<key key="name:zh" value="香啡缤"/>
         <reference ref="level_1"/>
-        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no"/>
+        <reference ref="takeaway_including_no"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-23:00"/>
 		<reference ref="wheelchair"/>
 		
@@ -390,7 +398,7 @@ If you want to share your custom tags with other users, please look through the 
         <text default="할리스커피" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Holly's Coffee" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
         <reference ref="level_1"/>
-        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no"/>
+        <reference ref="takeaway_including_no"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-23:00,08:00-24:00,08:00-01:30,09:00-24:00"/>
 		<reference ref="wheelchair"/>
 		
@@ -425,7 +433,7 @@ If you want to share your custom tags with other users, please look through the 
 		<key key="name:ja" value="ロッテリア"/>
 		<key key="name:zh" value="乐天利"/>
         <reference ref="level_1"/>
-        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
+        <reference ref="takeaway"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00,10:00-22:00,10:00-24:00"/>
 		<reference ref="wheelchair"/>
 		
@@ -455,7 +463,7 @@ If you want to share your custom tags with other users, please look through the 
         <text default="맘스터치" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Mom's Touch" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
         <reference ref="level_1"/>
-        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
+        <reference ref="takeaway"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-23:00,11:00-23:00,11:00-22:30,12:00-23:30,12:00-23:00"/>
 		<reference ref="wheelchair"/>
 		
@@ -487,7 +495,7 @@ If you want to share your custom tags with other users, please look through the 
 		<key key="name:ja" value="バーガーキング"/>
 		<key key="name:zh" value="漢堡王"/>
         <reference ref="level_1"/>
-        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
+        <reference ref="takeaway"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-23:00,10:00-22:00,10:00-24:00"/>
 		<reference ref="wheelchair"/>
 		
@@ -519,7 +527,7 @@ If you want to share your custom tags with other users, please look through the 
 		<key key="name:ja" value="ポパイズ"/>
 		<key key="name:zh" value="大力水手炸雞"/>
         <reference ref="level_1"/>
-        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
+        <reference ref="takeaway"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-22:00"/>
 		<reference ref="wheelchair"/>
 		
@@ -549,7 +557,7 @@ If you want to share your custom tags with other users, please look through the 
         <text default="KFC" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
 		<key key="name:zh" value="肯德基"/>
         <reference ref="level_1"/>
-        <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
+        <reference ref="takeaway"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-23:00,10:00-24:00,24/7"/>
 		<reference ref="wheelchair"/>
 		
