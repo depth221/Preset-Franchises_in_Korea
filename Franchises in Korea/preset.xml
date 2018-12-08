@@ -2,7 +2,7 @@
 <presets
 xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
 author="LuxuryCoop"
-version="3_2018-12-08"
+version="1_2018-12-09"
 description="Main franchises in South Korea"
 ko.description="대한민국 내의 주요 프랜차이즈"
 shortdescription="Franchises in Korea"
@@ -27,7 +27,7 @@ If you want to share your custom tags with other users, please look through the 
 <chunk id="internet">
 	<combo key="internet_access" text="Internet" ko.text="인터넷" values="yes,no,wlan,terminal,wired" ko.display_values="제공됨,제공되지 않음,Wi-Fi,컴퓨터가 비치되어 있음,유선랜 단자가 있음"/>
 	<combo key="internet_access:fee" text="Fee for Internet" ko.text="인터넷 요금" values="yes,no,customers" ko.display_values="유료,무료,고객에게만 무료"/>
-	<combo key="internet_access:operator" text="Operator for Internet (Telecom)" ko.text="인터넷 통신사" values="SKT,KT,LG U+"/>
+	<multiselect key="internet_access:operator" text="Telecom(Multiselect available)" ko.text="인터넷 통신사(여러 개 선택 가능)" values="SKT;KT;LG U+"/>
 </chunk>
 
 <chunk id="wi-fi">
