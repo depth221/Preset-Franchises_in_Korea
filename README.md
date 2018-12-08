@@ -13,6 +13,17 @@ in JOSM
 applied preset URL in GitHub
 
 # Update
+## 2018-12-08
+* Clearance for the code by using <chunk> and <reference>
+* Add a combobox for wheelchair accessiblility
+* Add comboboxs for Internet
+** Including Fee, Operator(Telecom)
+* Add a Blank Wi-Fi SSID (i.e. name of Wi-Fi)
+* Add a combobox for detailed description(by using the "description" tag) for PC Bang
+** Discount for Student
+** Acceleration in subtracting remaining time while some games
+** Discount for Student + Acceleration in subtracting remaining time while some games
+
 ## 2018-11-18
 * Deal with name:xx tags as default except in Korean and English
 * Add payments

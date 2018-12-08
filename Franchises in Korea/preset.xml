@@ -20,6 +20,56 @@ If you want to share your custom tags with other users, please look through the 
  * https://wiki.openstreetmap.org/wiki/Customising_JOSM_Presets
 -->
 <group icon="icon/South_Korea.svg" name="Franchises in Korea" ko.name="한국의 프랜차이즈">
+<chunk id="level_1">
+	<text default="1" key="level" text="Stories" ko.text="층수"/>
+</chunk>
+
+<chunk id="internet">
+	<combo key="internet_access" text="Internet" ko.text="인터넷" values="yes,no,wlan,terminal,wired" ko.display_values="제공됨,제공되지 않음,Wi-Fi,컴퓨터가 비치되어 있음,유선랜 단자가 있음"/>
+	<combo key="internet_access:fee" text="Fee for Internet" ko.text="인터넷 요금" values="yes,no,customers" ko.display_values="유료,무료,고객에게만 무료"/>
+	<combo key="internet_access:operator" text="Operator for Internet (Telecom)" ko.text="인터넷 통신사" values="SKT,KT,LG U+"/>
+</chunk>
+
+<chunk id="wi-fi">
+	<text key="internet_access:ssid" text="Name for Wi-Fi" ko.text="Wi-Fi 이름"/>
+</chunk>
+
+<chunk id="PCbang">
+	<combo key="charge" text="Charge" ko.text="요금" values="1000₩/1h,1200₩/1h,1500₩/1h,(요금)₩/1h" ko.display_values="1시간에 천원,1시간에 1200원,1시간에 1500원,1시간에 (요금)원(사용자 지정)"/>
+	<combo key="description" text="Detailed Description" ko.text="상세 설명"
+		values="학생 할인,일부 게임 실행 시 시간 차감 가속,학생 할인;일부 게임 실행 시 시간 차감 가속"
+		display_values="Discount for Student,Acceleration in subtracting remaining time while some games,Discount for Student + Acceleration in subtracting remaining time while some games"
+		ko.display_values="학생 할인,일부 게임 실행 시 시간 차감 가속,학생 할인 + 일부 게임 실행 시 시간 차감 가속"
+	/>
+	<label text="(※ Exist value in 'description' tag will be removed!)" ko.text="(※ 기존 'description' 태그의 값은 삭제됩니다!)"/>
+</chunk>
+
+<chunk id="wheelchair">
+	<combo key="wheelchair" text="Wheelchair Accessibility" ko.text="휠체어 접근 가능" values="yes,no,limited" ko.display_values="가능,불가능,일부만 접근 가능"/>
+</chunk>
+
+<chunk id="payment">
+	<label text="Payments" ko.text="지불 수단"/>
+	<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
+	<label text="It is good not to check if you don't know that info well." ko.text="잘 모르겠다면 아예 체크를 하지 않는 것이 좋습니다."/>
+	<space />
+	<key key="payment:coins" value="yes"/>
+	<key key="payment:cash" value="yes"/>
+	<key key="payment:notes" value="yes"/>
+	<key key="payment:visa" value="yes"/>
+	<key key="payment:mastercard" value="yes"/>
+	<key key="payment:american_express" value="yes"/>
+	<key key="payment:diners_club" value="yes"/>
+	<key key="payment:discover_card" value="yes"/>
+	<key key="payment:jcb" value="yes"/>
+</chunk>
+
+<chunk id="payment_optional">
+	<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
+	<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
+	<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+</chunk>
+
 
 <group icon="icon/Lunch.svg" name="Lunch" ko.name="도시락">
     <item icon="icon/Lunch.svg" name="Hansot Lunch" ko.name="한솥도시락" type="node,relation,closedway,multipolygon">
@@ -36,26 +86,18 @@ If you want to share your custom tags with other users, please look through the 
         <text default="한솥도시락" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="한솥도시락" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Hansot Lunch" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="https://www.hsd.co.kr/"/>
         <key key="brand:wikidata" value="Q55730575"/>
@@ -72,29 +114,21 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:en" value="DAISO"/>
         <key key="operator" value="(주)아성다이소"/>
 		
-        <text default="다이소" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="다이소" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="다이소" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="DAISO" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
 		<key key="name:ja" value="ダイソー"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <text default="10:00-22:00" key="opening_hours" text="Opening Hours" ko.text="영업 시간"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="https://www.daiso.co.kr/"/>
         <key key="brand:wikidata" value="Q12590862"/>
@@ -116,26 +150,18 @@ If you want to share your custom tags with other users, please look through the 
         <text default="Tous Les Jours" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
 		<key key="name:ja" value="トゥレジュール"/>
 		<key key="name:zh" value="多乐之日"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="06:30-24:00,07:30-24:00,08:00-24:00,08:00-22:00,07:00-21:30"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="https://www.tlj.co.kr:7008/product/new.asp"/>
         <key key="brand:wikidata" value="Q3535609"/>
@@ -153,26 +179,18 @@ If you want to share your custom tags with other users, please look through the 
         <text default="파리바게뜨" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Paris Baguette" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
 		<key key="name:zh" value="巴黎贝甜"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-24:00,09:00-22:00"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="https://www.paris.co.kr/main"/>
         <key key="brand:wikidata" value="Q12621461"/>
@@ -194,26 +212,18 @@ If you want to share your custom tags with other users, please look through the 
         <text default="본죽" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="본죽" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Bonjuk" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="http://www.bonjuk.co.kr/default.asp"/>
     </item>
@@ -230,26 +240,18 @@ If you want to share your custom tags with other users, please look through the 
         <text default="죽이야기" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="죽이야기" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="JukStory" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="http://www.jukstory.com/main.php"/>
     </item>
@@ -267,26 +269,18 @@ If you want to share your custom tags with other users, please look through the 
         <text default="빽다방" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Paik's Coffee" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
         <text default="빽다방" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-24:00"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="http://paikdabang.com/"/>
         <key key="brand:wikidata" value="Q12624133"/>
@@ -306,26 +300,18 @@ If you want to share your custom tags with other users, please look through the 
         <text default="스타벅스" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
 		<key key="name:ja" value="スターバックス"/>
 		<key key="name:zh" value="星巴克"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 07:00-23:00; Sa-Su 08:00-23:00,07:00-23:00,08:00-23:00"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="http://www.istarbucks.co.kr/index.do"/>
         <key key="brand:wikidata" value="Q37158"/>
@@ -343,26 +329,18 @@ If you want to share your custom tags with other users, please look through the 
         <text default="이디야커피" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="이디야커피" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Ediya Coffee" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="08:00-22:00,09:00-22:00"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="https://www.ediya.com/"/>
         <key key="brand:wikidata" value="Q12611298"/>
@@ -382,26 +360,18 @@ If you want to share your custom tags with other users, please look through the 
         <text default="The Coffee Bean &amp; Tea Leaf" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
 		<key key="name:ja" value="ザ・コーヒービーン &amp; ティーリーフ"/>
 		<key key="name:zh" value="香啡缤"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-23:00"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="http://www.coffeebeankorea.com/main/main.asp"/>
         <key key="brand:wikidata" value="Q1141384"/>
@@ -419,26 +389,18 @@ If you want to share your custom tags with other users, please look through the 
         <text default="할리스커피" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="할리스커피" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Holly's Coffee" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-23:00,08:00-24:00,08:00-01:30,09:00-24:00"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="https://www.hollys.co.kr/"/>
         <key key="brand:wikidata" value="Q12624386"/>
@@ -462,26 +424,18 @@ If you want to share your custom tags with other users, please look through the 
         <text default="Lotteria" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
 		<key key="name:ja" value="ロッテリア"/>
 		<key key="name:zh" value="乐天利"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00,10:00-22:00,10:00-24:00"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="http://www.lotteria.com/"/>
         <key key="brand:wikidata" value="Q249525"/>
@@ -500,26 +454,18 @@ If you want to share your custom tags with other users, please look through the 
         <text default="맘스터치" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="맘스터치" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Mom's Touch" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-23:00,11:00-23:00,11:00-22:30,12:00-23:30,12:00-23:00"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="http://www.momstouch.co.kr/main/main.php"/>
         <key key="brand:wikidata" value="Q23044856"/>
@@ -540,26 +486,18 @@ If you want to share your custom tags with other users, please look through the 
         <text default="Burger King" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
 		<key key="name:ja" value="バーガーキング"/>
 		<key key="name:zh" value="漢堡王"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-23:00,10:00-22:00,10:00-24:00"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="http://www.burgerking.co.kr/"/>
         <key key="brand:wikidata" value="Q177054"/>
@@ -580,26 +518,18 @@ If you want to share your custom tags with other users, please look through the 
         <text default="Popeyes" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
 		<key key="name:ja" value="ポパイズ"/>
 		<key key="name:zh" value="大力水手炸雞"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-22:00"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="http://www.popeyes.co.kr/"/>
         <key key="brand:wikidata" value="Q1330910"/>
@@ -618,26 +548,18 @@ If you want to share your custom tags with other users, please look through the 
         <text default="KFC" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="KFC" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
 		<key key="name:zh" value="肯德基"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-23:00,10:00-24:00,24/7"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="http://www.kfckorea.com/"/>
         <key key="brand:wikidata" value="Q524757"/>
@@ -658,25 +580,17 @@ If you want to share your custom tags with other users, please look through the 
         <text default="미니스톱" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="MINISTOP" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
 		<key key="name:ja" value="ミニストップ"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="06:00-01:00,06:00-24:00,24/7"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="https://www.ministop.co.kr/"/>
         <key key="brand:wikidata" value="Q1038929"/>
@@ -694,25 +608,19 @@ If you want to share your custom tags with other users, please look through the 
         <text default="세븐일레븐" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Seven-Eleven" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
 		<key key="name:ja" value="セブン-イレブン"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="06:00-01:00,06:00-24:00,24/7"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
+		<reference ref="payment"/>
 		<key key="payment:unionpay" value="yes"/>
 		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
 		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="http://www.7-eleven.co.kr/"/>
         <key key="brand:wikidata" value="Q259340"/>
@@ -728,25 +636,19 @@ If you want to share your custom tags with other users, please look through the 
 		
         <text default="CU" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="CU" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="06:00-01:00,06:00-24:00,24/7,"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
+		<reference ref="payment"/>
 		<key key="payment:unionpay" value="yes"/>
 		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
 		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="http://cu.bgfretail.com/index.do"/>
         <key key="brand:wikidata" value="Q12580836"/>
@@ -762,25 +664,19 @@ If you want to share your custom tags with other users, please look through the 
 		
         <text default="GS25" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="GS25" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="06:00-01:00,06:00-24:00,24/7,"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
+		<reference ref="payment"/>
 		<key key="payment:unionpay" value="yes"/>
 		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
 		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="http://gs25.gsretail.com/gscvs/ko/main"/>
         <key key="brand:wikidata" value="Q624041"/>
@@ -800,25 +696,17 @@ If you want to share your custom tags with other users, please look through the 
         <text default="스킨푸드" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="스킨푸드" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Skinfood" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00,10:00-22:00,"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="http://www.theskinfood.com/"/>
         <key key="brand:wikidata" value="Q7535345"/>
@@ -835,25 +723,17 @@ If you want to share your custom tags with other users, please look through the 
         <text default="올리브영" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="올리브영" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Olive Young" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
-        <text default="1" key="level" text="Stories" ko.text="층수"/>
+        <reference ref="level_1"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-22:00,09:00-22:00"/>
+		<reference ref="wheelchair"/>
 		
 		<item_separator />
-		<label text="Payments" ko.text="지불 수단"/>
-		<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-		<space />
-		<key key="payment:coins" value="yes"/>
-		<key key="payment:cash" value="yes"/>
-		<key key="payment:notes" value="yes"/>
-		<key key="payment:visa" value="yes"/>
-		<key key="payment:mastercard" value="yes"/>
-		<key key="payment:american_express" value="yes"/>
-		<key key="payment:diners_club" value="yes"/>
-		<key key="payment:discover_card" value="yes"/>
-		<key key="payment:jcb" value="yes"/>
-		<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
-		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
-		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
 		
         <key key="website" value="http://www.oliveyoung.co.kr/store/main/main.do"/>
         <key key="brand:wikidata" value="Q55643246"/>
