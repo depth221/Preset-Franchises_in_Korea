@@ -2,7 +2,7 @@
 <presets
 xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
 author="LuxuryCoop"
-version="2_2018-12-08"
+version="3_2018-12-08"
 description="Main franchises in South Korea"
 ko.description="대한민국 내의 주요 프랜차이즈"
 shortdescription="Franchises in Korea"
@@ -36,10 +36,8 @@ If you want to share your custom tags with other users, please look through the 
 
 <chunk id="PCbang">
 	<combo key="charge" text="Charge" ko.text="요금" values="1000₩/1h,1200₩/1h,1500₩/1h,(요금)₩/1h" ko.display_values="1시간에 천원,1시간에 1200원,1시간에 1500원,1시간에 (요금)원(사용자 지정)"/>
-	<combo key="description" text="Detailed Description" ko.text="상세 설명"
-		values="학생 할인,일부 게임 실행 시 시간 차감 가속,학생 할인;일부 게임 실행 시 시간 차감 가속"
-		display_values="Discount for Student,Acceleration in subtracting remaining time while some games,Discount for Student + Acceleration in subtracting remaining time while some games"
-		ko.display_values="학생 할인,일부 게임 실행 시 시간 차감 가속,학생 할인 + 일부 게임 실행 시 시간 차감 가속"
+	<multiselect key="description" text="Detailed Description(Multiselect available)" ko.text="상세 설명(여러 개 선택 가능)" values="학생 할인;일부 게임 실행 시 시간 차감 가속"
+		display_values="Discount for Student;Acceleration in subtracting remaining time while some games"
 	/>
 	<label text="(※ Exist value in 'description' tag will be removed!)" ko.text="(※ 기존 'description' 태그의 값은 삭제됩니다!)"/>
 </chunk>
@@ -53,7 +51,7 @@ If you want to share your custom tags with other users, please look through the 
 </chunk>
 
 <chunk id="wheelchair">
-	<combo key="wheelchair" text="Wheelchair Accessibility" ko.text="휠체어 접근 가능" values="yes,no,limited" ko.display_values="가능,불가능,일부만 접근 가능"/>
+	<combo key="wheelchair" text="Wheelchair Accessibility" ko.text="휠체어 접근 가능" values="yes,no,limited" ko.display_values="가능,불가능,일부 장소만 접근 가능"/>
 </chunk>
 
 <chunk id="payment">
@@ -325,6 +323,65 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikidata" value="Q37158"/>
         <key key="brand:wikipedia" value="ko:스타벅스"/>
     </item>
+	
+    <item icon="presets/food/cafe.svg" name="Angel-in-us" ko.name="엔제리너스" type="node,relation,closedway,multipolygon">
+        <label text="Angel-in-us" ko.text="엔제리너스"/>
+        <key key="amenity" value="cafe"/>
+        <key key="cuisine" value="coffee_shop"/>
+        <key key="brand" value="엔제리너스"/>
+        <key key="brand:en" value="Angel-in-us"/>
+        <key key="operator" value="롯데GRS"/>
+		
+        <text default="엔제리너스" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="엔제리너스" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="Angel-in-us" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="エンジェル・イン・アス・コーヒー"/>
+        <reference ref="level_1"/>
+        <reference ref="takeaway_including_no"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-23:00"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+        <key key="website" value="http://www.angelinus.com/"/>
+        <key key="brand:wikidata" value="Q12606781"/>
+        <key key="brand:wikipedia" value="ko:엔제리너스"/>
+    </item>
+	
+    <item icon="presets/food/cafe.svg" name="YOGER PRESSO" ko.name="요거프레소" type="node,relation,closedway,multipolygon">
+        <label text="YOGER PRESSO" ko.text="요거프레소"/>
+        <key key="amenity" value="cafe"/>
+        <key key="cuisine" value="coffee_shop"/>
+        <key key="brand" value="요거프레소"/>
+        <key key="brand:en" value="YOGER PRESSO"/>
+        <key key="operator" value="(주)요거프레소"/>
+		
+        <text default="요거프레소" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="요거프레소" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="YOGER PRESSO" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+        <reference ref="level_1"/>
+        <reference ref="takeaway_including_no"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-23:00"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+        <key key="website" value="https://www.yogerpresso.co.kr/"/>
+        <key key="brand:wikidata" value="Q28699804"/>
+        <key key="brand:wikipedia" value="ko:요거프레소"/>
+    </item>
 
     <item icon="presets/food/cafe.svg" name="Ediya Coffee" ko.name="이디야커피" type="node,relation,closedway,multipolygon">
         <label text="Ediya Coffee" ko.text="이디야커피"/>
@@ -353,6 +410,64 @@ If you want to share your custom tags with other users, please look through the 
         <key key="website" value="https://www.ediya.com/"/>
         <key key="brand:wikidata" value="Q12611298"/>
         <key key="brand:wikipedia" value="ko:이디야커피"/>
+    </item>
+	
+	<item icon="presets/food/cafe.svg" name="Caffe Bene" ko.name="카페베네" type="node,relation,closedway,multipolygon">
+        <label text="Caffe Bene" ko.text="카페베네"/>
+        <key key="amenity" value="cafe"/>
+        <key key="cuisine" value="coffee_shop"/>
+        <key key="brand" value="카페베네"/>
+        <key key="brand:en" value="Caffe Bene"/>
+        <key key="operator" value="Caffe Bene"/>
+		
+        <text default="카페베네" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="카페베네" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="Caffe Bene" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="カフェベネ"/>
+        <reference ref="level_1"/>
+        <reference ref="takeaway_including_no"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-23:00"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+        <key key="website" value="http://www.caffebene.co.kr/"/>
+        <key key="brand:wikidata" value="Q5017149"/>
+        <key key="brand:wikipedia" value="ko:카페베네"/>
+    </item>
+	
+	<item icon="presets/food/cafe.svg" name="CoffeeBay" ko.name="커피베이" type="node,relation,closedway,multipolygon">
+        <label text="CoffeeBay" ko.text="커피베이"/>
+        <key key="amenity" value="cafe"/>
+        <key key="cuisine" value="coffee_shop"/>
+        <key key="brand" value="커피베이"/>
+        <key key="brand:en" value="CoffeeBay"/>
+        <key key="operator" value="사과나무(주)"/>
+		
+        <text default="커피베이" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="커피베이" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="CoffeeBay" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+        <reference ref="level_1"/>
+        <reference ref="takeaway_including_no"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-23:00"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+        <key key="website" value="http://www.coffee-bay.co.kr/"/>
+        <key key="brand:wikipedia" value="ko:커피베이"/>
     </item>
 
     <item icon="logo/Coffee_Bean.png" name="The Coffee Bean &amp; Tea Leaf" ko.name="커피빈" type="node,relation,closedway,multipolygon">
@@ -384,6 +499,94 @@ If you want to share your custom tags with other users, please look through the 
         <key key="website" value="http://www.coffeebeankorea.com/main/main.asp"/>
         <key key="brand:wikidata" value="Q1141384"/>
         <key key="brand:wikipedia" value="ko:커피빈 앤드 티리프"/>
+    </item>
+	
+	<item icon="logo/TOM_N_TOMS.png" name="TOM N TOMS" ko.name="탐앤탐스" type="node,relation,closedway,multipolygon">
+        <label text="TOM N TOMS" ko.text="탐앤탐스"/>
+        <key key="amenity" value="cafe"/>
+        <key key="cuisine" value="coffee_shop"/>
+        <key key="brand" value="탐앤탐스"/>
+        <key key="brand:en" value="TOM N TOMS"/>
+        <key key="operator" value="TOM N TOMS COFFEE"/>
+		
+        <text default="탐앤탐스" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="탐앤탐스" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="TOM N TOMS" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+        <reference ref="level_1"/>
+        <reference ref="takeaway_including_no"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-23:00"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+        <key key="website" value="https://www.tomntoms.com/"/>
+        <key key="brand:wikidata" value="Q18142418"/>
+        <key key="brand:wikipedia" value="ko:탐앤탐스"/>
+    </item>
+	
+	<item icon="presets/food/cafe.svg" name="A Twosome Place" ko.name="투썸플레이스" type="node,relation,closedway,multipolygon">
+        <label text="A Twosome Place" ko.text="투썸플레이스"/>
+        <key key="amenity" value="cafe"/>
+        <key key="cuisine" value="coffee_shop"/>
+        <key key="brand" value="투썸플레이스"/>
+        <key key="brand:en" value="A Twosome Place"/>
+        <key key="operator" value="투썸플레이스(주)"/>
+		
+        <text default="투썸플레이스" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="투썸플레이스" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="A Twosome Place" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+        <reference ref="level_1"/>
+        <reference ref="takeaway_including_no"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-23:00"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+        <key key="website" value="https://www.twosome.co.kr:7009/microsite/2018/christmas/index.asp"/>
+        <key key="brand:wikidata" value="Q12621301"/>
+        <key key="brand:wikipedia" value="ko:투썸플레이스"/>
+    </item>
+	
+	<item icon="presets/food/cafe.svg" name="Caffè Pascucci" ko.name="파스쿠치" type="node,relation,closedway,multipolygon">
+        <label text="Caffè Pascucci" ko.text="파스쿠치"/>
+        <key key="amenity" value="cafe"/>
+        <key key="cuisine" value="coffee_shop"/>
+        <key key="brand" value="파스쿠치"/>
+        <key key="brand:en" value="Caffè Pascucci"/>
+        <key key="operator" value="(주)파리크라상"/>
+		
+        <text default="파스쿠치" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="파스쿠치" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="Caffè Pascucci" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="カフェパスクッチ"/>
+        <reference ref="level_1"/>
+        <reference ref="takeaway_including_no"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="07:00-23:00"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+        <key key="website" value="http://www.caffe-pascucci.co.kr/index.asp"/>
+        <key key="brand:wikidata" value="Q5017191"/>
+        <key key="brand:wikipedia" value="ko:파스쿠치"/>
     </item>
 
     <item icon="presets/food/cafe.svg" name="Holly's Coffee" ko.name="할리스커피" type="node,relation,closedway,multipolygon">
