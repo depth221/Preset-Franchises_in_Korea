@@ -894,7 +894,7 @@ If you want to share your custom tags with other users, please look through the 
     <item icon="logo/KFC.png" name="KFC" type="node,relation,closedway,multipolygon">
         <label text="KFC"/>
         <key key="amenity" value="fast_food"/>
-        <key key="cuisine" value="burger"/>
+        <key key="cuisine" value="burger;chicken"/>
         <key key="brand" value="KFC"/>
         <key key="operator" value="케이에프씨코리아"/>
         <key key="operator:en" value="KFC Korea"/>
