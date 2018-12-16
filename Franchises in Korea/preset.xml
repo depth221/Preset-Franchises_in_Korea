@@ -2,7 +2,7 @@
 <presets
 xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
 author="LuxuryCoop"
-version="1_2018-12-16"
+version="2_2018-12-16"
 description="Main franchises in South Korea"
 ko.description="대한민국 내의 주요 프랜차이즈"
 shortdescription="Franchises in Korea"
@@ -94,7 +94,7 @@ If you want to share your custom tags with other users, please look through the 
 <group icon="icon/Lunch.svg" name="Lunch" ko.name="도시락">
     <item icon="icon/Lunch.svg" name="Hansot Lunch" ko.name="한솥도시락" type="node,relation,closedway,multipolygon">
         <label text="Hansot Lunch" ko.text="한솥도시락"/>
-        <reference ref="unofficial_en">
+        <reference ref="unofficial_en"/>
 		<space />
         <key key="amenity" value="restaurant"/>
         <key key="cuisine" value="asian"/>
@@ -129,8 +129,8 @@ If you want to share your custom tags with other users, please look through the 
 <group icon="presets/food/restaurant.svg" name="Bunsik" ko.name="분식집">
 	<item icon="presets/food/restaurant.svg" name="Gamtan Topokki" ko.name="감탄떡볶이" type="node,relation,closedway,multipolygon">
 		<label text="Gamtan Topokki" ko.text="감탄떡볶이"/>
-		<reference ref="unofficial_en">
-		<reference ref="unofficial_ja">
+		<reference ref="unofficial_en"/>
+		<reference ref="unofficial_ja"/>
 		<space />
         <key key="amenity" value="restaurant"/>
         <key key="cuisine" value="korean"/>
@@ -164,7 +164,7 @@ If you want to share your custom tags with other users, please look through the 
 		<label text="Gimbap Cheonguk" ko.text="김밥천국"/>
 		<label text="※ I could't include a operator and website in this panel" ko.text="※ '김밥천국'이라는 상표를 쓰는 업체는 한 곳이 아니기 때문에"/>
 		<label text="because 'Gimbap Cheonguk' isn't unique." ko.text="부득이하게 사업자명과 웹 사이트를 넣을 수 없었습니다."/>
-		<reference ref="unofficial_ja">
+		<reference ref="unofficial_ja"/>
 		<space />
         <key key="amenity" value="restaurant"/>
         <key key="cuisine" value="korean"/>
@@ -194,7 +194,7 @@ If you want to share your custom tags with other users, please look through the 
 	
 	<item icon="presets/food/restaurant.svg" name="Sinjeon Topokki" ko.name="신전떡볶이" type="node,relation,closedway,multipolygon">
 		<label text="Sinjeon Topokki" ko.text="신전떡볶이"/>
-		<reference ref="unofficial_en">
+		<reference ref="unofficial_en"/>
 		<space />
         <key key="amenity" value="restaurant"/>
         <key key="cuisine" value="korean"/>
@@ -223,8 +223,8 @@ If you want to share your custom tags with other users, please look through the 
 	
 	<item icon="presets/food/restaurant.svg" name="Jaws Topokki" ko.name="죠스떡볶이" type="node,relation,closedway,multipolygon">
 		<label text="Jaws Topokki" ko.text="죠스떡볶이"/>
-		<reference ref="unofficial_en">
-		<reference ref="unofficial_ja">
+		<reference ref="unofficial_en"/>
+		<reference ref="unofficial_ja"/>
 		<space />
         <key key="amenity" value="restaurant"/>
         <key key="cuisine" value="korean"/>
