@@ -28,13 +28,13 @@ If you want to share your custom tags with other users, please look through the 
 	<label text="※ Japanese name isn't from Wikipedia!" ko.text="※ 일본어 명칭은 위키피디아에서 가져온 명칭이 아닙니다!"/>
 </chunk>
 
-<!----------------------------------------------------------------------------------------------------------->
+<!--────────────────────────────────────────────────────────────────────────────-->
 
 <chunk id="level_1">
 	<text default="1" key="level" text="Stories" ko.text="층수"/>
 </chunk>
 
-<!----------------------------------------------------------------------------------------------------------->
+<!--────────────────────────────────────────────────────────────────────────────-->
 
 <chunk id="internet">
 	<combo key="internet_access" text="Internet" ko.text="인터넷" values="yes,no,wlan,terminal,wired" ko.display_values="제공됨,제공되지 않음,Wi-Fi,컴퓨터가 비치되어 있음,유선랜 단자가 있음"/>
@@ -55,7 +55,7 @@ If you want to share your custom tags with other users, please look through the 
 	<label text="(※ Exist value in 'description' tag will be removed!)" ko.text="(※ 기존 'description' 태그의 값은 삭제됩니다!)"/>
 </chunk>
 
-<!----------------------------------------------------------------------------------------------------------->
+<!--────────────────────────────────────────────────────────────────────────────-->
 
 <chunk id="takeaway">
 	<combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only" ko.display_values="가능,테이크 아웃만 가능"/>
@@ -65,7 +65,7 @@ If you want to share your custom tags with other users, please look through the 
 	<combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no" ko.display_values="가능,테이크 아웃만 가능,불가능"/>
 </chunk>
 
-<!----------------------------------------------------------------------------------------------------------->
+<!--────────────────────────────────────────────────────────────────────────────-->
 
 <chunk id="outdoor_seating">
 	<combo key="outdoor_seating" text="Outdoor Seating" ko.text="야외 테이블 여부" values="yes,no" ko.display_values="있음,없음"/>
@@ -75,7 +75,7 @@ If you want to share your custom tags with other users, please look through the 
 	<combo key="wheelchair" text="Wheelchair Accessibility" ko.text="휠체어 접근 가능" values="yes,no,limited" ko.display_values="가능,불가능,일부 장소만 접근 가능"/>
 </chunk>
 
-<!----------------------------------------------------------------------------------------------------------->
+<!--────────────────────────────────────────────────────────────────────────────-->
 
 <chunk id="payment">
 	<label text="Payments" ko.text="지불 수단"/>
@@ -99,7 +99,7 @@ If you want to share your custom tags with other users, please look through the 
 	<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
 </chunk>
 
-<!----------------------------------------------------------------------------------------------------------->
+<!--────────────────────────────────────────────────────────────────────────────-->
 
 <chunk id="fuel">
 	<label text="Type of Fuel" ko.text="판매 유종"/>
@@ -109,7 +109,7 @@ If you want to share your custom tags with other users, please look through the 
 	<check key="fuel:octane_95" text="Premium Gasoline" ko.text="고급 휘발유"/>
 </chunk>
 
-<!----------------------------------------------------------------------------------------------------------->
+<!--────────────────────────────────────────────────────────────────────────────-->
 
 <group icon="Franchises_in_Korea/icon/Lunch.svg" name="Lunch" ko.name="도시락">
     <item icon="Franchises_in_Korea/icon/Lunch.svg" name="Hansot Lunch" ko.name="한솥도시락" type="node,relation,closedway,multipolygon">
