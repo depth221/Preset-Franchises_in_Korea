@@ -91,10 +91,11 @@ If you want to share your custom tags with other users, please look through the 
 	<key key="payment:diners_club" value="yes"/>
 	<key key="payment:discover_card" value="yes"/>
 	<key key="payment:jcb" value="yes"/>
+	<key key="payment:unionpay" value="yes"/>
+	<check key="payment:unionpay" value="yes"/>
 </chunk>
 
 <chunk id="payment_optional">
-	<check key="payment:unionpay" text="Unionpay" ko.text="Unionpay(은련)"/>
 	<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
 	<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
 </chunk>
@@ -1335,7 +1336,6 @@ If you want to share your custom tags with other users, please look through the 
 		
 		<item_separator />
 		<reference ref="payment"/>
-		<key key="payment:unionpay" value="yes"/>
 		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
 		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
 		
@@ -1364,7 +1364,6 @@ If you want to share your custom tags with other users, please look through the 
 		
 		<item_separator />
 		<reference ref="payment"/>
-		<key key="payment:unionpay" value="yes"/>
 		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
 		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
 		
@@ -1393,7 +1392,6 @@ If you want to share your custom tags with other users, please look through the 
 		
 		<item_separator />
 		<reference ref="payment"/>
-		<key key="payment:unionpay" value="yes"/>
 		<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
 		<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
 		
