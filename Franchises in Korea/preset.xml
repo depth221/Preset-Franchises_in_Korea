@@ -80,7 +80,7 @@ If you want to share your custom tags with other users, please look through the 
 <chunk id="payment">
 	<label text="Payments" ko.text="지불 수단"/>
 	<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
-	<label text="It is good not to check if you don't know that info well." ko.text="잘 모르겠다면 아예 체크하지 않는 것이 좋습니다."/>
+	<label text="It is good not to check if you don't know that info well." ko.text="잘 모르겠다면 처음부터 체크하지 않는 것이 좋습니다."/>
 	<space />
 	<key key="payment:coins" value="yes"/>
 	<key key="payment:cash" value="yes"/>
