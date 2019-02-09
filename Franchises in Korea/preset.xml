@@ -103,7 +103,7 @@ If you want to share your custom tags with other users, please look through the 
 <!--────────────────────────────────────────────────────────────────────────────-->
 
 <chunk id="fuel">
-	<check key="self_service" text="Self Service" ko.text="셀프 여부" value_on="only"/>
+	<check key="self_service" text="Self Service" ko.text="셀프 주유소" value_on="only"/>
 	<space />
 	<label text="Type of Fuel" ko.text="판매 유종"/>
 	<space />
