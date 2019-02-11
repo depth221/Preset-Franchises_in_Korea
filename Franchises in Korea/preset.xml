@@ -776,6 +776,7 @@ If you want to share your custom tags with other users, please look through the 
         <text default="스타벅스" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
 		<key key="name:ja" value="スターバックス"/>
 		<key key="name:zh" value="星巴克"/>
+		<key key="name:ru" value="Старбакс"/>
 		<key key="int_name" value="Starbucks"/>
         <reference ref="level_0_default"/>
         <reference ref="takeaway_including_no"/>
