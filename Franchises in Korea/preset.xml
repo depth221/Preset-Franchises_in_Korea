@@ -31,19 +31,19 @@ If you want to share your custom tags with other users, please look through the 
 <!--────────────────────────────────────────────────────────────────────────────-->
 
 <chunk id="level_0_default">
-	<text default="0" key="level" text="Stories" ko.text="층수"/>
+	<text default="0" key="level" text="Levels" ko.text="층수"/>
 </chunk>
 
 <chunk id="level_0">
-	<text key="level" text="Stories" ko.text="층수"/>
+	<text key="level" text="Levels" ko.text="층수"/>
 </chunk>
 
 <!--────────────────────────────────────────────────────────────────────────────-->
 
 <chunk id="internet">
-	<combo key="internet_access" text="Internet" ko.text="인터넷" values="yes,no,wlan,terminal,wired" ko.display_values="제공됨,제공되지 않음,Wi-Fi,컴퓨터가 비치되어 있음,유선랜 단자가 있음"/>
-	<combo key="internet_access:fee" text="Fee for Internet" ko.text="인터넷 요금" values="yes,no,customers" ko.display_values="유료,무료,고객에게만 무료"/>
-	<multiselect key="internet_access:operator" text="Telecom(Multiselect available)" ko.text="인터넷 통신사(여러 개 선택 가능)" values="SKT;KT;LG U+" rows="3" values_sort="false"/>
+	<combo key="internet_access" text="Internet Access" ko.text="인터넷" values="yes,no,wlan,terminal,wired" ko.display_values="제공됨,제공되지 않음,Wi-Fi,컴퓨터가 비치되어 있음,유선랜 단자가 있음"/>
+	<combo key="internet_access:fee" text="Fee" ko.text="인터넷 요금" values="yes,no,customers" ko.display_values="유료,무료,고객에게만 무료"/>
+	<multiselect key="internet_access:operator" text="Operator" ko.text="인터넷 통신사(여러 개 선택 가능)" values="SKT;KT;LG U+" rows="3" values_sort="false"/>
 </chunk>
 
 <chunk id="wi-fi">
@@ -51,7 +51,7 @@ If you want to share your custom tags with other users, please look through the 
 </chunk>
 
 <chunk id="PCbang">
-	<combo key="charge" text="Charge" ko.text="요금" values="1000₩/1h,1200₩/1h,1500₩/1h,(요금)₩/1h" ko.display_values="1시간에 천원,1시간에 1200원,1시간에 1500원,1시간에 (요금)원(사용자 지정)"/>
+	<combo key="charge" text="Fee" ko.text="요금" values="1000₩/1h,1200₩/1h,1500₩/1h,(요금)₩/1h" ko.display_values="1시간에 천원,1시간에 1200원,1시간에 1500원,1시간에 (요금)원(사용자 지정)"/>
 	<multiselect key="description" text="Detailed Description(Multiselect available)" ko.text="상세 설명(여러 개 선택 가능)" values="학생 할인;일부 게임 실행 시 시간 차감 가속"
 		display_values="Discount for Student;Acceleration in subtracting remaining time while some games"
 		rows="2" values_sort="false"
@@ -62,27 +62,27 @@ If you want to share your custom tags with other users, please look through the 
 <!--────────────────────────────────────────────────────────────────────────────-->
 
 <chunk id="takeaway">
-	<combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only" ko.display_values="가능,반드시 테이크 아웃해야 함"/>
+	<combo key="takeaway" text="Takeaway" ko.text="테이크 아웃" values="yes,only" ko.display_values="가능,반드시 테이크 아웃해야 함"/>
 </chunk>
 
 <chunk id="takeaway_including_no">
-	<combo key="takeaway" text="Takeaway Available" ko.text="테이크 아웃" values="yes,only,no" ko.display_values="가능,반드시 테이크 아웃해야 함,불가능"/>
+	<combo key="takeaway" text="Takeaway" ko.text="테이크 아웃" values="yes,only,no" ko.display_values="가능,반드시 테이크 아웃해야 함,불가능"/>
 </chunk>
 
 <!--────────────────────────────────────────────────────────────────────────────-->
 
 <chunk id="outdoor_seating">
-	<combo key="outdoor_seating" text="Outdoor Seating" ko.text="야외 테이블 여부" values="yes,no" ko.display_values="있음,없음"/>
+	<combo key="outdoor_seating" text="Outdoor seating" ko.text="야외 좌석" values="yes,no" ko.display_values="있음,없음"/>
 </chunk>
 
 <chunk id="wheelchair">
-	<combo key="wheelchair" text="Wheelchair Accessibility" ko.text="휠체어 접근 가능" values="yes,no,limited" ko.display_values="가능,불가능,일부 장소만 접근 가능"/>
+	<combo key="wheelchair" text="Wheelchairs" ko.text="휠체어 접근" values="yes,no,limited" ko.display_values="가능,불가능,일부 장소만 접근 가능"/>
 </chunk>
 
 <!--────────────────────────────────────────────────────────────────────────────-->
 
 <chunk id="payment">
-	<label text="Payments" ko.text="지불 수단"/>
+	<label text="Payment Methods" ko.text="지불 수단"/>
 	<label text="※ Values are set to 'no' if checking and unchecking!" ko.text="※ 체크를 했다가 풀면 no로 등록됩니다!"/>
 	<label text="It is good not to check if you don't know that info well." ko.text="잘 모르겠다면 처음부터 체크하지 않는 것이 좋습니다."/>
 	<space />
@@ -100,7 +100,7 @@ If you want to share your custom tags with other users, please look through the 
 </chunk>
 
 <chunk id="payment_optional">
-	<check key="payment:telephone_cards" text="Telephone Cards" ko.text="전화카드" default="off"/>
+	<check key="payment:telephone_cards" text="Telephone cards" ko.text="전화카드" default="off"/>
 	<check key="payment:maestro" text="Maestro" ko.text="마에스트로" default="off"/>
 </chunk>
 
@@ -377,7 +377,7 @@ If you want to share your custom tags with other users, please look through the 
 </group>
 
 
-<group icon="presets/vehicle/fuel.svg" name="Gas Station" ko.name="주유소/충전소">
+<group icon="presets/vehicle/fuel.svg" name="Fuel" ko.name="주유소/충전소">
 	<item icon="presets/vehicle/fuel.svg" name="EX Gas Station" ko.name="EX 주유소" type="node,relation,closedway,multipolygon">
         <label text="EX Gas Station" ko.text="EX 주유소"/>
 		<reference ref="unofficial_en"/>
@@ -1420,7 +1420,7 @@ If you want to share your custom tags with other users, please look through the 
 </group>
 
 
-<group icon="presets/shop/cosmetics.svg" name="Cosmetic Store" ko.name="화장품 가게">
+<group icon="presets/shop/cosmetics.svg" name="Cosmetics" ko.name="화장품 가게">
     <item icon="presets/shop/cosmetics.svg" name="Skinfood" ko.name="스킨푸드" type="node,relation,closedway,multipolygon">
         <label text="Skinfood" ko.text="스킨푸드"/>
         <key key="shop" value="cosmetics"/>
