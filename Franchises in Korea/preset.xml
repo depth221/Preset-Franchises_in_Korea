@@ -2,7 +2,7 @@
 <presets
 xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
 author="LuxuryCoop"
-version="1_2019-02-26"
+version="2_2019-02-26"
 description="Main franchises in South Korea"
 ko.description="대한민국 내의 주요 프랜차이즈"
 shortdescription="Franchises in Korea"
@@ -1448,7 +1448,7 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand" value="교촌치킨"/>
         <key key="brand:en" value="KyoChon Chicken"/>
         <key key="operator" value="교촌에프앤비주식회사"/>
-        <key key="operator:en" value="KyoChon F&B Co., LTD"/>
+        <key key="operator:en" value="KyoChon FnB Co., LTD"/>
 		
         <text default="교촌치킨" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="교촌치킨" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
@@ -1628,8 +1628,8 @@ If you want to share your custom tags with other users, please look through the 
         <key key="cuisine" value="chicken"/>
         <key key="brand" value="또봉이통닭"/>
         <key key="brand:en" value="Ttobongee Chicken"/>
-        <key key="operator" value="주식회사 또봉이F&S"/>
-        <key key="operator:en" value="Ttobongee F&S"/>
+        <key key="operator" value="주식회사 또봉이F&amp;S"/>
+        <key key="operator:en" value="Ttobongee F&amp;S"/>
 		
         <text default="또봉이통닭" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="또봉이통닭" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
@@ -1819,7 +1819,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://www.mythunder.co.kr/board/index.php?board=map_01&type=view&idx=278"/>
+        <key key="website" value="http://www.mythunder.co.kr/board/index.php?board=map_01"/>
     </item>
 	
 	<item icon="presets/food/fast_food.svg" name="Ajuker Chicken" ko.name="아주커치킨" type="node,relation,closedway,multipolygon">
