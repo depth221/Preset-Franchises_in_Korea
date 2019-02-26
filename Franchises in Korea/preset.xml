@@ -2,7 +2,7 @@
 <presets
 xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
 author="LuxuryCoop"
-version="2_2019-02-26"
+version="3_2019-02-26"
 description="Main franchises in South Korea"
 ko.description="대한민국 내의 주요 프랜차이즈"
 shortdescription="Franchises in Korea"
@@ -26,6 +26,10 @@ If you want to share your custom tags with other users, please look through the 
 
 <chunk id="unofficial_ja">
 	<label text="※ Japanese name isn't from Wikipedia!" ko.text="※ 일본어 명칭은 위키피디아에서 가져온 명칭이 아닙니다!"/>
+</chunk>
+
+<chunk id="unofficial_zh">
+	<label text="※ Chinese name isn't from Wikipedia!" ko.text="※ 중국어 명칭은 위키피디아에서 가져온 명칭이 아닙니다!"/>
 </chunk>
 
 <!--────────────────────────────────────────────────────────────────────────────-->
@@ -118,6 +122,16 @@ If you want to share your custom tags with other users, please look through the 
 	<check key="fuel:diesel" text="Diesel" ko.text="경유" default="on"/>
 	<check key="fuel:octane_95" text="Premium Gasoline" ko.text="고급 휘발유"/>
 	<check key="fuel:kerosene" text="Kerosene" ko.text="등유"/>
+</chunk>
+
+<!--────────────────────────────────────────────────────────────────────────────-->
+
+<chunk id="atm_default">
+<check key="atm" text="Automated Teller Machine" ko.text="ATM" default="on"/>
+</chunk>
+
+<chunk id="atm">
+<check key="atm" text="Automated Teller Machine" ko.text="ATM"/>
 </chunk>
 
 <!--────────────────────────────────────────────────────────────────────────────-->
@@ -292,6 +306,407 @@ If you want to share your custom tags with other users, please look through the 
 </group>
 
 
+<group icon="presets/money/bank.svg" name="Bank" ko.name="은행">
+	<item icon="presets/money/bank.svg" name="Industrial Bank of Korea" ko.name="IBK기업은행" type="node,relation,closedway,multipolygon">
+		<label text="Industrial Bank of Korea" ko.text="IBK기업은행"/>
+		<key key="brand" value="IBK기업은행"/>
+		<key key="brand:en" value="Industrial Bank of Korea"/>
+		<key key="operator" value="중소기업은행"/>
+		
+		<text default="IBK기업은행" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="IBK기업은행" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Industrial Bank of Korea" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="IBK企業銀行"/>
+		<key key="name:zh" value="IBK企业银行"/>
+		<reference ref="level_0_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 09:00-16:00" default="Mo-Fr 09:00-16:00"/>
+		<reference ref="wheelchair"/>
+		<space />
+		<reference ref="atm_default"/>
+		
+		<key key="website" value="https://www.ibk.co.kr/"/>
+		<key key="brand:wikidata" value="Q483855"/>
+		<key key="brand:wikipedia" value="ko:중소기업은행"/>
+	</item>
+	
+	<item icon="presets/money/bank.svg" name="Kookmin Bank" ko.name="KB국민은행" type="node,relation,closedway,multipolygon">
+		<label text="Kookmin Bank" ko.text="KB국민은행"/>
+		<key key="brand" value="KB국민은행"/>
+		<key key="brand:en" value="KB Kookmin Bank"/>
+		<key key="operator" value="주식회사 국민은행"/>
+		
+		<text default="KB국민은행" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="KB국민은행" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="KB Kookmin Bank" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="国民銀行"/>
+		<key key="name:zh" value="国民银行"/>
+		<reference ref="level_0_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 09:00-16:00" default="Mo-Fr 09:00-16:00"/>
+		<reference ref="wheelchair"/>
+		<space />
+		<reference ref="atm_default"/>
+		
+		<key key="website" value="https://www.kbstar.com/"/>
+		<key key="brand:wikidata" value="Q496606"/>
+		<key key="brand:wikipedia" value="ko:국민은행"/>
+	</item>
+	
+	<item icon="presets/money/bank.svg" name="Korea Development Bank" ko.name="KDB산업은행" type="node,relation,closedway,multipolygon">
+		<label text="Korea Development Bank" ko.text="KDB산업은행"/>
+		<key key="brand" value="KDB산업은행"/>
+		<key key="brand:en" value="Korea Development Bank"/>
+		<key key="operator" value="주식회사 한국산업은행"/>
+		
+		<text default="KDB산업은행" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="KDB산업은행" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Korea Development Bank" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="韓国産業銀行"/>
+		<key key="name:zh" value="韩国产业银行"/>
+		<reference ref="level_0_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 09:00-16:00" default="Mo-Fr 09:00-16:00"/>
+		<reference ref="wheelchair"/>
+		<space />
+		<reference ref="atm_default"/>
+		
+		<key key="website" value="https://www.kdb.co.kr/ih/simpleJsp.do"/>
+		<key key="brand:wikidata" value="Q4409074"/>
+		<key key="brand:wikipedia" value="ko:한국산업은행"/>
+	</item>
+	
+	<item icon="presets/money/bank.svg" name="KEB Hana Bank" ko.name="KEB하나은행" type="node,relation,closedway,multipolygon">
+		<label text="KEB Hana Bank" ko.text="KEB하나은행"/>
+		<key key="brand" value="KEB하나은행"/>
+		<key key="brand:en" value="KEB Hana Bank"/>
+		<key key="operator" value="주식회사 하나은행"/>
+		
+		<text default="KEB하나은행" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="KEB하나은행" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="KEB Hana Bank" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="KEBハナ銀行"/>
+		<key key="name:zh" value="KEB韩亚银行"/>
+		<reference ref="level_0_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 09:00-16:00" default="Mo-Fr 09:00-16:00"/>
+		<reference ref="wheelchair"/>
+		<space />
+		<reference ref="atm_default"/>
+		
+		<key key="website" value="https://www.shinhan.com/index.jsp"/>
+		<key key="brand:wikidata" value="Q484047"/>
+		<key key="brand:wikipedia" value="ko:KEB하나은행"/>
+	</item>
+	
+	<item icon="presets/money/bank.svg" name="Nonghyup Bank" ko.name="NH농협은행" type="node,relation,closedway,multipolygon">
+		<label text="Nonghyup Bank" ko.text="NH농협은행"/>
+		<reference ref="unofficial_ja"/>
+		<space />
+		<key key="brand" value="NH농협은행"/>
+		<key key="brand:en" value="Nonghyup Bank"/>
+		<key key="operator" value="농협은행 주식회사"/>
+		<key key="operator:en" value="Nonghyup Bank Co., Ltd."/>
+		
+		<text default="NH농협은행" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="NH농협은행" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Nonghyup Bank" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="農協銀行"/>
+		<key key="name:zh" value="农协银行"/>
+		<reference ref="level_0_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 09:00-16:30" default="Mo-Fr 09:00-16:30"/>
+		<reference ref="wheelchair"/>
+		<space />
+		<reference ref="atm_default"/>
+		
+		<key key="website" value="https://banking.nonghyup.com/nhbank.html"/>
+		<key key="brand:wikidata" value="Q15283673"/>
+		<key key="brand:wikipedia" value="ko:NH농협은행"/>
+	</item>
+	
+	<item icon="presets/money/bank.svg" name="Standard Chartered Korea" ko.name="SC제일은행" type="node,relation,closedway,multipolygon">
+		<label text="Standard Chartered Korea" ko.text="SC제일은행"/>
+		<key key="brand" value="SC제일은행"/>
+		<key key="brand:en" value="Standard Chartered Korea"/>
+		<key key="operator" value="한국스탠다드차타드은행"/>
+		
+		<text default="SC제일은행" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="SC제일은행" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Standard Chartered Korea" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="韓国スタンダードチャータード銀行"/>
+		<reference ref="level_0_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 09:00-16:00" default="Mo-Fr 09:00-16:00"/>
+		<reference ref="wheelchair"/>
+		<space />
+		<reference ref="atm_default"/>
+		
+		<key key="website" value="https://www.standardchartered.co.kr/np/kr/Intro.jsp"/>
+		<key key="brand:wikidata" value="Q625531"/>
+		<key key="brand:wikipedia" value="ko:한국스탠다드차타드은행"/>
+	</item>
+	
+	<item icon="presets/money/bank.svg" name="Suhyup Bank" ko.name="수협은행" type="node,relation,closedway,multipolygon">
+		<label text="Suhyup Bank" ko.text="수협은행"/>
+		<key key="brand" value="수협은행"/>
+		<key key="brand:en" value="Suhyup Bank"/>
+		<key key="operator" value="수협은행"/>
+		
+		<text default="수협은행" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="수협은행" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Suhyup Bank" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<reference ref="level_0_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 09:00-16:00" default="Mo-Fr 09:00-16:00"/>
+		<reference ref="wheelchair"/>
+		<space />
+		<reference ref="atm_default"/>
+		
+		<key key="website" value="https://suhyup-bank.com/"/>
+		<key key="brand:wikidata" value="Q12603360"/>
+		<key key="brand:wikipedia" value="ko:수협은행"/>
+	</item>
+	
+	<item icon="presets/money/bank.svg" name="Shinhan Bank" ko.name="신한은행" type="node,relation,closedway,multipolygon">
+		<label text="Shinhan Bank" ko.text="신한은행"/>
+		<key key="brand" value="신한은행"/>
+		<key key="brand:en" value="Shinhan Bank"/>
+		<key key="operator" value="주식회사 신한은행"/>
+		
+		<text default="신한은행" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="신한은행" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Shinhan Bank" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="新韓銀行"/>
+		<key key="name:zh" value="新韩银行"/>
+		<reference ref="level_0_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 09:00-16:00" default="Mo-Fr 09:00-16:00"/>
+		<reference ref="wheelchair"/>
+		<space />
+		<reference ref="atm_default"/>
+		
+		<key key="website" value="https://www.shinhan.com/index.jsp"/>
+		<key key="brand:wikidata" value="Q487230"/>
+		<key key="brand:wikipedia" value="ko:신한은행"/>
+	</item>
+	
+	<item icon="presets/money/bank.svg" name="Woori Bank" ko.name="우리은행" type="node,relation,closedway,multipolygon">
+		<label text="Woori Bank" ko.text="우리은행"/>
+		<key key="brand" value="우리은행"/>
+		<key key="brand:en" value="Woori Bank"/>
+		<key key="operator" value="주식회사 우리은행"/>
+		
+		<text default="우리은행" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="우리은행" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Woori Bank" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="ウリィ銀行"/>
+		<key key="name:zh" value="友利银行"/>
+		<reference ref="level_0_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 09:00-16:00" default="Mo-Fr 09:00-16:00"/>
+		<reference ref="wheelchair"/>
+		<space />
+		<reference ref="atm_default"/>
+		
+		<key key="website" value="https://www.wooribank.com/"/>
+		<key key="brand:wikidata" value="Q494369"/>
+		<key key="brand:wikipedia" value="ko:우리은행"/>
+	</item>
+	
+	<item icon="presets/money/bank.svg" name="Export-Import Bank of Korea" ko.name="한국수출입은행" type="node,relation,closedway,multipolygon">
+		<label text="Export-Import Bank of Korea" ko.text="한국수출입은행"/>
+		<reference ref="unofficial_ja"/>
+		<space />
+		<key key="brand" value="한국수출입은행"/>
+		<key key="brand:en" value="Export-Import Bank of Korea"/>
+		<key key="operator" value="대한민국 정부"/>
+		<key key="operator:en" value="Government of South Korea"/>
+		<key key="operator:type" value="government"/>
+		
+		<text default="한국수출입은행" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="한국수출입은행" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Export-Import Bank of Korea" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="韓國輸出入銀行"/>
+		<key key="name:zh" value="韩国进出口银行"/>
+		<reference ref="level_0_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 09:00-16:00"/>
+		<reference ref="wheelchair"/>
+		<space />
+		<reference ref="atm_default"/>
+		
+		<key key="website" value="https://www.koreaexim.go.kr/site/main/index001"/>
+		<key key="brand:wikidata" value="Q4501812"/>
+		<key key="brand:wikipedia" value="ko:한국수출입은행"/>
+	</item>
+	
+	<item icon="presets/money/bank.svg" name="Citibank Korea" ko.name="한국씨티은행" type="node,relation,closedway,multipolygon">
+		<label text="Citibank Korea" ko.text="한국씨티은행"/>
+		<key key="brand" value="한국씨티은행"/>
+		<key key="brand:en" value="Citibank Korea"/>
+		<key key="operator" value="주식회사 한국씨티은행"/>
+		<key key="operator:en" value="Citibank Korea Inc."/>
+		
+		<text default="한국씨티은행" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="한국씨티은행" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Citibank Korea" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="韓国シティ銀行"/>
+		<reference ref="level_0_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 09:00-16:00" default="Mo-Fr 09:00-16:00"/>
+		<reference ref="wheelchair"/>
+		<space />
+		<reference ref="atm_default"/>
+		
+		<key key="website" value="https://www.citibank.co.kr/"/>
+		<key key="brand:wikidata" value="Q5122452"/>
+		<key key="brand:wikipedia" value="ko:한국씨티은행"/>
+	</item>
+	
+<separator/><!--────────────────────────────────────────────────────────────────────────────-->
+	
+	<item icon="presets/money/bank.svg" name="Kyongnam Bank" ko.name="경남은행" type="node,relation,closedway,multipolygon">
+		<label text="Kyongnam Bank" ko.text="경남은행"/>
+		<reference ref="unofficial_ja"/>
+		<reference ref="unofficial_zh"/>
+		<space />
+		<key key="brand" value="경남은행"/>
+		<key key="brand:en" value="Kyongnam Bank"/>
+		<key key="operator" value="주식회사 경남은행"/>
+		
+		<text default="경남은행" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="경남은행" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Kyongnam Bank" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="慶南銀行"/>
+		<key key="name:zh" value="庆南银行"/>
+		<reference ref="level_0_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 09:00-16:00" default="Mo-Fr 09:00-16:00"/>
+		<reference ref="wheelchair"/>
+		<space />
+		<reference ref="atm_default"/>
+		
+		<key key="website" value="https://www.knbank.co.kr/"/>
+		<key key="brand:wikidata" value="Q12583582"/>
+		<key key="brand:wikipedia" value="ko:경남은행"/>
+	</item>
+	
+	<item icon="presets/money/bank.svg" name="Kwangju Bank" ko.name="광주은행" type="node,relation,closedway,multipolygon">
+		<label text="Kwangju Bank" ko.text="광주은행"/>
+		<reference ref="unofficial_ja"/>
+		<reference ref="unofficial_zh"/>
+		<space />
+		<key key="brand" value="광주은행"/>
+		<key key="brand:en" value="Kwangju Bank"/>
+		<key key="operator" value="주식회사 광주은행"/>
+		
+		<text default="광주은행" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="광주은행" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Kwangju Bank" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="光州銀行"/>
+		<key key="name:zh" value="光州银行"/>
+		<reference ref="level_0_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 09:00-16:00" default="Mo-Fr 09:00-16:00"/>
+		<reference ref="wheelchair"/>
+		<space />
+		<reference ref="atm_default"/>
+		
+		<key key="website" value="https://pib.kjbank.com/"/>
+		<key key="brand:wikidata" value="Q16161492"/>
+		<key key="brand:wikipedia" value="ko:광주은행"/>
+	</item>
+	
+	<item icon="presets/money/bank.svg" name="Daegu Bank" ko.name="대구은행" type="node,relation,closedway,multipolygon">
+		<label text="Daegu Bank" ko.text="대구은행"/>
+		<reference ref="unofficial_ja"/>
+		<reference ref="unofficial_zh"/>
+		<space />
+		<key key="brand" value="대구은행"/>
+		<key key="brand:en" value="Daegu Bank"/>
+		<key key="operator" value="주식회사 대구은행"/>
+		
+		<text default="대구은행" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="대구은행" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Daegu Bank" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="大邱銀行"/>
+		<key key="name:zh" value="大邱银行"/>
+		<reference ref="level_0_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 09:00-16:00" default="Mo-Fr 09:00-16:00"/>
+		<reference ref="wheelchair"/>
+		<space />
+		<reference ref="atm_default"/>
+		
+		<key key="website" value="https://www.dgb.co.kr/"/>
+		<key key="brand:wikidata" value="Q61090620"/>
+		<key key="brand:wikipedia" value="ko:대구은행"/>
+	</item>
+	
+	<item icon="presets/money/bank.svg" name="Busan Bank" ko.name="부산은행" type="node,relation,closedway,multipolygon">
+		<label text="Busan Bank" ko.text="부산은행"/>
+		<reference ref="unofficial_ja"/>
+		<reference ref="unofficial_zh"/>
+		<space />
+		<key key="brand" value="부산은행"/>
+		<key key="brand:en" value="Busan Bank"/>
+		<key key="operator" value="주식회사 부산은행"/>
+		
+		<text default="부산은행" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="부산은행" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Busan Bank" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="釜山銀行"/>
+		<key key="name:zh" value="釜山银行"/>
+		<reference ref="level_0_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 09:00-16:00" default="Mo-Fr 09:00-16:00"/>
+		<reference ref="wheelchair"/>
+		<space />
+		<reference ref="atm_default"/>
+		
+		<key key="website" value="https://www.busanbank.co.kr/"/>
+		<key key="brand:wikidata" value="Q5001259"/>
+		<key key="brand:wikipedia" value="ko:부산은행"/>
+	</item>
+	
+	<item icon="presets/money/bank.svg" name="Jeonbuk Bank" ko.name="전북은행" type="node,relation,closedway,multipolygon">
+		<label text="Jeonbuk Bank" ko.text="전북은행"/>
+		<reference ref="unofficial_ja"/>
+		<reference ref="unofficial_zh"/>
+		<space />
+		<key key="brand" value="전북은행"/>
+		<key key="brand:en" value="Jeonbuk Bank"/>
+		<key key="operator" value="주식회사 전북은행"/>
+		
+		<text default="전북은행" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="전북은행" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Jeonbuk Bank" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="全北銀行"/>
+		<key key="name:zh" value="全北银行"/>
+		<reference ref="level_0_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 09:00-16:00" default="Mo-Fr 09:00-16:00"/>
+		<reference ref="wheelchair"/>
+		<space />
+		<reference ref="atm_default"/>
+		
+		<key key="website" value="https://www.jbbank.co.kr/"/>
+		<key key="brand:wikidata" value="Q16173522"/>
+		<key key="brand:wikipedia" value="ko:전북은행"/>
+	</item>
+	
+	<item icon="presets/money/bank.svg" name="Jeju Bank" ko.name="제주은행" type="node,relation,closedway,multipolygon">
+		<label text="Jeju Bank" ko.text="제주은행"/>
+		<reference ref="unofficial_ja"/>
+		<reference ref="unofficial_zh"/>
+		<space />
+		<key key="brand" value="제주은행"/>
+		<key key="brand:en" value="Jeju Bank"/>
+		<key key="operator" value="주식회사 제주은행"/>
+		
+		<text default="제주은행" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="제주은행" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Jeju Bank" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="済州銀行"/>
+		<key key="name:zh" value="济州银行"/>
+		<reference ref="level_0_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 09:00-16:00" default="Mo-Fr 09:00-16:00"/>
+		<reference ref="wheelchair"/>
+		<space />
+		<reference ref="atm_default"/>
+		
+		<key key="website" value="https://www.e-jejubank.com/"/>
+		<key key="brand:wikidata" value="Q12616473"/>
+		<key key="brand:wikipedia" value="ko:제주은행"/>
+	</item>
+</group>
+
+
 <group icon="presets/shop/variety_store.svg" name="Variety Store" ko.name="잡화점">
     <item icon="presets/shop/variety_store.svg" name="DAISO" ko.name="다이소" type="node,relation,closedway,multipolygon">
         <label text="DAISO" ko.text="다이소"/>
@@ -319,7 +734,7 @@ If you want to share your custom tags with other users, please look through the 
         <key key="website" value="https://www.daiso.co.kr/"/>
         <key key="brand:wikidata" value="Q12590862"/>
         <key key="brand:wikipedia" value="ko:아성다이소"/>
-    </item>
+	</item>
 </group>
 
 
