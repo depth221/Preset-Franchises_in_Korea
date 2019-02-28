@@ -1545,6 +1545,7 @@ If you want to share your custom tags with other users, please look through the 
 
 
 <group icon="presets/food/fast_food.svg" name="Fast Foods" ko.name="패스트푸드">
+<group icon="presets/food/fast_food.svg" name="Burger" ko.name="햄버거">
 	<item icon="Franchises_in_Korea/logo/KFC.png" name="KFC" type="node,relation,closedway,multipolygon">
         <label text="KFC"/>
         <key key="amenity" value="fast_food"/>
@@ -1748,9 +1749,9 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikidata" value="Q1330910"/>
         <key key="brand:wikipedia" value="ko:파파이스"/>
     </item>
+</group>
 	
-	<separator/><!--────────────────────────────────────────────────────────────────────────────-->
-	
+<group icon="presets/food/fast_food.svg" name="Chicken" ko.name="치킨">
 	<item icon="presets/food/fast_food.svg" name="60CHICHKEN" ko.name="60계치킨" type="node,relation,closedway,multipolygon">
         <label text="60CHICHKEN" ko.text="60계치킨"/>
         <key key="amenity" value="fast_food"/>
@@ -2640,6 +2641,7 @@ If you want to share your custom tags with other users, please look through the 
 		
         <key key="website" value="http://hochicken.co.kr/"/>
     </item>
+</group>
 </group>
 
 
