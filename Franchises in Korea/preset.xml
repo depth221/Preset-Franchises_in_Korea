@@ -2,7 +2,7 @@
 <presets
 xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
 author="LuxuryCoop"
-version="3_2019-02-26"
+version="1_2019-02-28"
 description="Main franchises in South Korea"
 ko.description="대한민국 내의 주요 프랜차이즈"
 shortdescription="Franchises in Korea"
@@ -75,6 +75,10 @@ If you want to share your custom tags with other users, please look through the 
 
 <chunk id="delivery">
 	<combo key="delivery" text="Delivery" ko.text="배달" values="yes,only,no" ko.display_values="가능,반드시 배달시켜야 함,불가능"/>
+</chunk>
+
+<chunk id="drive_through">
+	<combo key="drive_through" text="Drive through" ko.text="드라이브 스루" values="yes,no" ko.display_values="있음,없음"/>
 </chunk>
 
 <!--────────────────────────────────────────────────────────────────────────────-->
@@ -1541,6 +1545,39 @@ If you want to share your custom tags with other users, please look through the 
 
 
 <group icon="presets/food/fast_food.svg" name="Fast Foods" ko.name="패스트푸드">
+	<item icon="Franchises_in_Korea/logo/KFC.png" name="KFC" type="node,relation,closedway,multipolygon">
+        <label text="KFC"/>
+        <key key="amenity" value="fast_food"/>
+        <key key="cuisine" value="burger;chicken"/>
+        <key key="brand" value="KFC"/>
+        <key key="operator" value="케이에프씨코리아"/>
+        <key key="operator:en" value="KFC Korea"/>
+		
+        <text default="KFC" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="KFC" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="KFC" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:zh" value="肯德基"/>
+		<key key="int_name" value="KFC"/>
+        <reference ref="level_0_default"/>
+        <reference ref="takeaway"/>
+		<reference ref="delivery"/>
+		<reference ref="drive_through"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-23:00,10:00-24:00,24/7"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+        <key key="website" value="http://www.kfckorea.com/"/>
+        <key key="brand:wikidata" value="Q524757"/>
+        <key key="brand:wikipedia" value="ko:KFC"/>
+    </item>
+	
     <item icon="presets/food/fast_food.svg" name="Lotteria" ko.name="롯데리아" type="node,relation,closedway,multipolygon">
         <label text="Lotteria" ko.text="롯데리아"/>
         <key key="amenity" value="fast_food"/>
@@ -1558,6 +1595,7 @@ If you want to share your custom tags with other users, please look through the 
         <reference ref="level_0_default"/>
         <reference ref="takeaway"/>
 		<reference ref="delivery"/>
+		<reference ref="drive_through"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00,10:00-22:00,10:00-24:00"/>
 		<reference ref="wheelchair"/>
 		
@@ -1574,7 +1612,7 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikipedia" value="ko:롯데리아"/>
     </item>
 
-    <item icon="presets/food/fast_food.svg" name="Mom's Touch" ko.name="맘스터치" type="node,relation,closedway,multipolygon">
+	<item icon="presets/food/fast_food.svg" name="Mom's Touch" ko.name="맘스터치" type="node,relation,closedway,multipolygon">
         <label text="Mom's Touch" ko.text="맘스터치"/>
         <key key="amenity" value="fast_food"/>
         <key key="cuisine" value="burger;chicken"/>
@@ -1589,6 +1627,7 @@ If you want to share your custom tags with other users, please look through the 
         <reference ref="level_0_default"/>
         <reference ref="takeaway"/>
 		<reference ref="delivery"/>
+		<reference ref="drive_through"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-23:00,11:00-23:00,11:00-22:30,12:00-23:30,12:00-23:00"/>
 		<reference ref="wheelchair"/>
 		
@@ -1623,6 +1662,7 @@ If you want to share your custom tags with other users, please look through the 
         <reference ref="level_0_default"/>
         <reference ref="takeaway"/>
 		<reference ref="delivery"/>
+		<reference ref="drive_through"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00,10:00-22:00,07:00-02:00,24/7"/>
 		<reference ref="wheelchair"/>
 		
@@ -1657,6 +1697,7 @@ If you want to share your custom tags with other users, please look through the 
         <reference ref="level_0_default"/>
         <reference ref="takeaway"/>
 		<reference ref="delivery"/>
+		<reference ref="drive_through"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-23:00,10:00-22:00,10:00-24:00"/>
 		<reference ref="wheelchair"/>
 		
@@ -1673,7 +1714,7 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikipedia" value="ko:버거킹"/>
     </item>
 
-    <item icon="presets/food/fast_food.svg" name="Popeyes" ko.name="파파이스" type="node,relation,closedway,multipolygon">
+	<item icon="presets/food/fast_food.svg" name="Popeyes" ko.name="파파이스" type="node,relation,closedway,multipolygon">
         <label text="Popeyes" ko.text="파파이스"/>
         <key key="amenity" value="fast_food"/>
         <key key="cuisine" value="burger;chicken"/>
@@ -1691,6 +1732,7 @@ If you want to share your custom tags with other users, please look through the 
         <reference ref="level_0_default"/>
         <reference ref="takeaway"/>
 		<reference ref="delivery"/>
+		<reference ref="drive_through"/>
         <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-22:00"/>
 		<reference ref="wheelchair"/>
 		
@@ -1705,38 +1747,6 @@ If you want to share your custom tags with other users, please look through the 
         <key key="website" value="http://www.popeyes.co.kr/"/>
         <key key="brand:wikidata" value="Q1330910"/>
         <key key="brand:wikipedia" value="ko:파파이스"/>
-    </item>
-
-    <item icon="Franchises_in_Korea/logo/KFC.png" name="KFC" type="node,relation,closedway,multipolygon">
-        <label text="KFC"/>
-        <key key="amenity" value="fast_food"/>
-        <key key="cuisine" value="burger;chicken"/>
-        <key key="brand" value="KFC"/>
-        <key key="operator" value="케이에프씨코리아"/>
-        <key key="operator:en" value="KFC Korea"/>
-		
-        <text default="KFC" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
-        <text default="KFC" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
-        <text default="KFC" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
-		<key key="name:zh" value="肯德基"/>
-		<key key="int_name" value="KFC"/>
-        <reference ref="level_0_default"/>
-        <reference ref="takeaway"/>
-		<reference ref="delivery"/>
-        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-23:00,10:00-24:00,24/7"/>
-		<reference ref="wheelchair"/>
-		
-		<item_separator />
-		<reference ref="payment"/>
-		<reference ref="payment_optional"/>
-		
-		<item_separator />
-		<reference ref="internet"/>
-		<reference ref="wi-fi"/>
-		
-        <key key="website" value="http://www.kfckorea.com/"/>
-        <key key="brand:wikidata" value="Q524757"/>
-        <key key="brand:wikipedia" value="ko:KFC"/>
     </item>
 	
 	<separator/><!--────────────────────────────────────────────────────────────────────────────-->
@@ -1826,6 +1836,39 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="wi-fi"/>
 		
         <key key="website" value="https://www.bhc.co.kr/"/>
+    </item>
+	
+	<item icon="Franchises_in_Korea/logo/KFC.png" name="KFC" type="node,relation,closedway,multipolygon">
+        <label text="KFC"/>
+        <key key="amenity" value="fast_food"/>
+        <key key="cuisine" value="burger;chicken"/>
+        <key key="brand" value="KFC"/>
+        <key key="operator" value="케이에프씨코리아"/>
+        <key key="operator:en" value="KFC Korea"/>
+		
+        <text default="KFC" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="KFC" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="KFC" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:zh" value="肯德基"/>
+		<key key="int_name" value="KFC"/>
+        <reference ref="level_0_default"/>
+        <reference ref="takeaway"/>
+		<reference ref="delivery"/>
+		<reference ref="drive_through"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-23:00,10:00-24:00,24/7"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+        <key key="website" value="http://www.kfckorea.com/"/>
+        <key key="brand:wikidata" value="Q524757"/>
+        <key key="brand:wikipedia" value="ko:KFC"/>
     </item>
 	
 	<item icon="presets/food/fast_food.svg" name="Gangjeongi Gigamakyeo" ko.name="강정이기가막혀" type="node,relation,closedway,multipolygon">
@@ -2092,6 +2135,38 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="wi-fi"/>
 		
         <key key="website" value="http://www.limschicken.co.kr/"/>
+    </item>
+	
+	<item icon="presets/food/fast_food.svg" name="Mom's Touch" ko.name="맘스터치" type="node,relation,closedway,multipolygon">
+        <label text="Mom's Touch" ko.text="맘스터치"/>
+        <key key="amenity" value="fast_food"/>
+        <key key="cuisine" value="burger;chicken"/>
+        <key key="brand" value="맘스터치"/>
+        <key key="brand:en" value="Mom's Touch"/>
+        <key key="operator" value="해마로푸드서비스(주)"/>
+        <key key="operator:en" value="Haemaro Food Service"/>
+		
+        <text default="맘스터치" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="맘스터치" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="Mom's Touch" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+        <reference ref="level_0_default"/>
+        <reference ref="takeaway"/>
+		<reference ref="delivery"/>
+		<reference ref="drive_through"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-23:00,11:00-23:00,11:00-22:30,12:00-23:30,12:00-23:00"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+        <key key="website" value="http://www.momstouch.co.kr/main/main.php"/>
+        <key key="brand:wikidata" value="Q23044856"/>
+        <key key="brand:wikipedia" value="ko:맘스터치"/>
     </item>
 	
 	<item icon="presets/food/fast_food.svg" name="Mexican Chicken(맥)" ko.name="맥시칸치킨" type="node,relation,closedway,multipolygon">
@@ -2408,6 +2483,41 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="wi-fi"/>
 		
         <key key="website" value="http://www.tiba.co.kr/"/>
+    </item>
+	
+	<item icon="presets/food/fast_food.svg" name="Popeyes" ko.name="파파이스" type="node,relation,closedway,multipolygon">
+        <label text="Popeyes" ko.text="파파이스"/>
+        <key key="amenity" value="fast_food"/>
+        <key key="cuisine" value="burger;chicken"/>
+        <key key="brand" value="파파이스"/>
+        <key key="brand:en" value="Popeyes"/>
+        <key key="operator" value="(주)TS 푸드앤시스템"/>
+        <key key="operator:en" value="TS Food &amp; System"/>
+		
+        <text default="파파이스" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="파파이스" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="Popeyes" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="ポパイズ"/>
+		<key key="name:zh" value="大力水手炸雞"/>
+		<key key="int_name" value="Popeyes"/>
+        <reference ref="level_0_default"/>
+        <reference ref="takeaway"/>
+		<reference ref="delivery"/>
+		<reference ref="drive_through"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-22:00"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+        <key key="website" value="http://www.popeyes.co.kr/"/>
+        <key key="brand:wikidata" value="Q1330910"/>
+        <key key="brand:wikipedia" value="ko:파파이스"/>
     </item>
 	
 	<item icon="presets/food/fast_food.svg" name="Pelicana" ko.name="페리카나" type="node,relation,closedway,multipolygon">
