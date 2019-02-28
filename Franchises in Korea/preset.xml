@@ -1625,6 +1625,7 @@ If you want to share your custom tags with other users, please look through the 
         <text default="맘스터치" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="맘스터치" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
         <text default="Mom's Touch" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="マムズタッチ"/>
         <reference ref="level_0_default"/>
         <reference ref="takeaway"/>
 		<reference ref="delivery"/>
