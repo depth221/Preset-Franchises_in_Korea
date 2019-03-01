@@ -2,7 +2,7 @@
 <presets
 xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
 author="LuxuryCoop"
-version="1_2019-02-28"
+version="1_2019-03-01"
 description="Main franchises in South Korea"
 ko.description="대한민국 내의 주요 프랜차이즈"
 shortdescription="Franchises in Korea"
@@ -313,6 +313,7 @@ If you want to share your custom tags with other users, please look through the 
 <group icon="presets/money/bank.svg" name="Bank" ko.name="은행">
 	<item icon="presets/money/bank.svg" name="Industrial Bank of Korea" ko.name="IBK기업은행" type="node,relation,closedway,multipolygon">
 		<label text="Industrial Bank of Korea" ko.text="IBK기업은행"/>
+		<key key="amenity" value="bank"/>
 		<key key="brand" value="IBK기업은행"/>
 		<key key="brand:en" value="Industrial Bank of Korea"/>
 		<key key="operator" value="중소기업은행"/>
@@ -335,6 +336,7 @@ If you want to share your custom tags with other users, please look through the 
 	
 	<item icon="presets/money/bank.svg" name="Kookmin Bank" ko.name="KB국민은행" type="node,relation,closedway,multipolygon">
 		<label text="Kookmin Bank" ko.text="KB국민은행"/>
+		<key key="amenity" value="bank"/>
 		<key key="brand" value="KB국민은행"/>
 		<key key="brand:en" value="KB Kookmin Bank"/>
 		<key key="operator" value="주식회사 국민은행"/>
@@ -357,6 +359,7 @@ If you want to share your custom tags with other users, please look through the 
 	
 	<item icon="presets/money/bank.svg" name="Korea Development Bank" ko.name="KDB산업은행" type="node,relation,closedway,multipolygon">
 		<label text="Korea Development Bank" ko.text="KDB산업은행"/>
+		<key key="amenity" value="bank"/>
 		<key key="brand" value="KDB산업은행"/>
 		<key key="brand:en" value="Korea Development Bank"/>
 		<key key="operator" value="주식회사 한국산업은행"/>
@@ -379,6 +382,7 @@ If you want to share your custom tags with other users, please look through the 
 	
 	<item icon="presets/money/bank.svg" name="KEB Hana Bank" ko.name="KEB하나은행" type="node,relation,closedway,multipolygon">
 		<label text="KEB Hana Bank" ko.text="KEB하나은행"/>
+		<key key="amenity" value="bank"/>
 		<key key="brand" value="KEB하나은행"/>
 		<key key="brand:en" value="KEB Hana Bank"/>
 		<key key="operator" value="주식회사 하나은행"/>
@@ -403,6 +407,7 @@ If you want to share your custom tags with other users, please look through the 
 		<label text="Nonghyup Bank" ko.text="NH농협은행"/>
 		<reference ref="unofficial_ja"/>
 		<space />
+		<key key="amenity" value="bank"/>
 		<key key="brand" value="NH농협은행"/>
 		<key key="brand:en" value="Nonghyup Bank"/>
 		<key key="operator" value="농협은행 주식회사"/>
@@ -426,6 +431,7 @@ If you want to share your custom tags with other users, please look through the 
 	
 	<item icon="presets/money/bank.svg" name="Standard Chartered Korea" ko.name="SC제일은행" type="node,relation,closedway,multipolygon">
 		<label text="Standard Chartered Korea" ko.text="SC제일은행"/>
+		<key key="amenity" value="bank"/>
 		<key key="brand" value="SC제일은행"/>
 		<key key="brand:en" value="Standard Chartered Korea"/>
 		<key key="operator" value="한국스탠다드차타드은행"/>
@@ -447,6 +453,7 @@ If you want to share your custom tags with other users, please look through the 
 	
 	<item icon="presets/money/bank.svg" name="Suhyup Bank" ko.name="수협은행" type="node,relation,closedway,multipolygon">
 		<label text="Suhyup Bank" ko.text="수협은행"/>
+		<key key="amenity" value="bank"/>
 		<key key="brand" value="수협은행"/>
 		<key key="brand:en" value="Suhyup Bank"/>
 		<key key="operator" value="수협은행"/>
@@ -467,6 +474,7 @@ If you want to share your custom tags with other users, please look through the 
 	
 	<item icon="presets/money/bank.svg" name="Shinhan Bank" ko.name="신한은행" type="node,relation,closedway,multipolygon">
 		<label text="Shinhan Bank" ko.text="신한은행"/>
+		<key key="amenity" value="bank"/>
 		<key key="brand" value="신한은행"/>
 		<key key="brand:en" value="Shinhan Bank"/>
 		<key key="operator" value="주식회사 신한은행"/>
@@ -489,6 +497,7 @@ If you want to share your custom tags with other users, please look through the 
 	
 	<item icon="presets/money/bank.svg" name="Woori Bank" ko.name="우리은행" type="node,relation,closedway,multipolygon">
 		<label text="Woori Bank" ko.text="우리은행"/>
+		<key key="amenity" value="bank"/>
 		<key key="brand" value="우리은행"/>
 		<key key="brand:en" value="Woori Bank"/>
 		<key key="operator" value="주식회사 우리은행"/>
@@ -513,6 +522,7 @@ If you want to share your custom tags with other users, please look through the 
 		<label text="Export-Import Bank of Korea" ko.text="한국수출입은행"/>
 		<reference ref="unofficial_ja"/>
 		<space />
+		<key key="amenity" value="bank"/>
 		<key key="brand" value="한국수출입은행"/>
 		<key key="brand:en" value="Export-Import Bank of Korea"/>
 		<key key="operator" value="대한민국 정부"/>
@@ -537,6 +547,7 @@ If you want to share your custom tags with other users, please look through the 
 	
 	<item icon="presets/money/bank.svg" name="Citibank Korea" ko.name="한국씨티은행" type="node,relation,closedway,multipolygon">
 		<label text="Citibank Korea" ko.text="한국씨티은행"/>
+		<key key="amenity" value="bank"/>
 		<key key="brand" value="한국씨티은행"/>
 		<key key="brand:en" value="Citibank Korea"/>
 		<key key="operator" value="주식회사 한국씨티은행"/>
@@ -564,6 +575,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="unofficial_ja"/>
 		<reference ref="unofficial_zh"/>
 		<space />
+		<key key="amenity" value="bank"/>
 		<key key="brand" value="경남은행"/>
 		<key key="brand:en" value="Kyongnam Bank"/>
 		<key key="operator" value="주식회사 경남은행"/>
@@ -589,6 +601,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="unofficial_ja"/>
 		<reference ref="unofficial_zh"/>
 		<space />
+		<key key="amenity" value="bank"/>
 		<key key="brand" value="광주은행"/>
 		<key key="brand:en" value="Kwangju Bank"/>
 		<key key="operator" value="주식회사 광주은행"/>
@@ -614,6 +627,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="unofficial_ja"/>
 		<reference ref="unofficial_zh"/>
 		<space />
+		<key key="amenity" value="bank"/>
 		<key key="brand" value="대구은행"/>
 		<key key="brand:en" value="Daegu Bank"/>
 		<key key="operator" value="주식회사 대구은행"/>
@@ -639,6 +653,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="unofficial_ja"/>
 		<reference ref="unofficial_zh"/>
 		<space />
+		<key key="amenity" value="bank"/>
 		<key key="brand" value="부산은행"/>
 		<key key="brand:en" value="Busan Bank"/>
 		<key key="operator" value="주식회사 부산은행"/>
@@ -664,6 +679,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="unofficial_ja"/>
 		<reference ref="unofficial_zh"/>
 		<space />
+		<key key="amenity" value="bank"/>
 		<key key="brand" value="전북은행"/>
 		<key key="brand:en" value="Jeonbuk Bank"/>
 		<key key="operator" value="주식회사 전북은행"/>
@@ -689,6 +705,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="unofficial_ja"/>
 		<reference ref="unofficial_zh"/>
 		<space />
+		<key key="amenity" value="bank"/>
 		<key key="brand" value="제주은행"/>
 		<key key="brand:en" value="Jeju Bank"/>
 		<key key="operator" value="주식회사 제주은행"/>
