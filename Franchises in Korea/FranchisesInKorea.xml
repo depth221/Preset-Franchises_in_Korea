@@ -2931,7 +2931,7 @@ If you want to share your custom tags with other users, please look through the 
 </group>
 
 
-<group icon="presets/shop/cosmetics.svg" name="Cosmetics" ko.name="화장품 가게">
+<group icon="presets/shop/cosmetics.svg" name="Cosmetics" ko.name="화장품">
     <item icon="presets/shop/cosmetics.svg" name="Skinfood" ko.name="스킨푸드" type="node,relation,closedway,multipolygon">
         <label text="Skinfood" ko.text="스킨푸드"/>
         <key key="shop" value="cosmetics"/>
