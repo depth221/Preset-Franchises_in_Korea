@@ -1584,13 +1584,13 @@ If you want to share your custom tags with other users, please look through the 
         <label text="Café Pascucci" ko.text="파스쿠찌"/>
         <key key="amenity" value="cafe"/>
         <key key="cuisine" value="coffee_shop"/>
-        <key key="brand" value="파스쿠치"/>
-        <key key="brand:en" value="Caffè Pascucci"/>
+        <key key="brand" value="파스쿠찌"/>
+        <key key="brand:en" value="Café Pascucci"/>
         <key key="operator" value="(주)파리크라상"/>
 		
-        <text default="파스쿠치" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
-        <text default="파스쿠치" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
-        <text default="Caffè Pascucci" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+        <text default="파스쿠찌" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="파스쿠찌" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="Café Pascucci" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
 		<key key="name:ja" value="カフェパスクッチ"/>
         <reference ref="level_1_default"/>
         <reference ref="takeaway_including_no"/>
