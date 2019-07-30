@@ -1580,8 +1580,8 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikipedia" value="ko:투썸플레이스"/>
     </item>
 	
-	<item icon="presets/food/cafe.svg" name="Caffè Pascucci" ko.name="파스쿠치" type="node,relation,closedway,multipolygon">
-        <label text="Caffè Pascucci" ko.text="파스쿠치"/>
+	<item icon="presets/food/cafe.svg" name="Café Pascucci" ko.name="파스쿠찌" type="node,relation,closedway,multipolygon">
+        <label text="Café Pascucci" ko.text="파스쿠찌"/>
         <key key="amenity" value="cafe"/>
         <key key="cuisine" value="coffee_shop"/>
         <key key="brand" value="파스쿠치"/>
