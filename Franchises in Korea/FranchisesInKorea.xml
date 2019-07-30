@@ -176,6 +176,58 @@ If you want to share your custom tags with other users, please look through the 
 </group>
 
 
+<group icon="presets/shop/stationery.svg" name="Stationery" ko.name="문구점">
+	<item icon="presets/shop/stationery.svg" name="Office Alpha" ko.name="알파문구 / 오피스알파" type="node,relation,closedway,multipolygon">
+		<label text="Office Alpha" ko.text="알파문구 / 오피스알파"/>
+		<key key="shop" value="stationery"/>
+		<key key="brand" value="알파문구"/>
+		<key key="brand:en" value="Office Alpha"/>
+		<key key="operator" value="알파(주)"/>
+		<key key="operator:en" value="Alpha Inc."/>
+		
+		<text default="오피스알파" key="alt_name" text="Alt Name(Korean)" ko.text="대체 점포명(한국어)"/>
+		<text default="알파문구" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="알파문구" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Office Alpha" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<reference ref="level_1_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-22:00"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<key key="website" value="https://www.alpha.co.kr/"/>
+	</item>
+	
+	<item icon="presets/shop/stationery.svg" name="Office Depot" ko.name="오피스디포" type="node,relation,closedway,multipolygon">
+		<label text="Office Depot" ko.text="오피스디포"/>
+		<key key="shop" value="stationery"/>
+		<key key="brand" value="오피스디포"/>
+		<key key="brand:en" value="Office Depot"/>
+		<key key="operator" value="㈜오피스디포코리아"/>
+		<key key="operator:en" value="Office Depot Korea Inc."/>
+		
+		<text default="오피스디포" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="오피스디포" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Office Depot" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="オフィス・デポ"/>
+		<key key="name:zh" value="欧迪办公"/>
+		<reference ref="level_1_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-22:00"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<key key="website" value="http://www.officedepot.co.kr/"/>
+		<key key="brand:wikidata" value="Q1337797"/>
+		<key key="brand:wikipedia" value="ko:오피스 디포"/>
+	</item>
+</group>
+
+
 <group icon="presets/food/restaurant.svg" name="Bunsik" ko.name="분식집">
 	<item icon="presets/food/restaurant.svg" name="Gamtan Topokki" ko.name="감탄떡볶이" type="node,relation,closedway,multipolygon">
 		<label text="Gamtan Topokki" ko.text="감탄떡볶이"/>
