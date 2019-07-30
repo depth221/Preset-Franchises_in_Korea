@@ -2812,6 +2812,61 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikidata" value="Q7535345"/>
         <key key="brand:wikipedia" value="ko:스킨푸드"/>
     </item>
+	
+	<item icon="presets/shop/cosmetics.svg" name="Aritaum" ko.name="아리따움" type="node,relation,closedway,multipolygon">
+        <label text="Aritaum" ko.text="아리따움"/>
+        <key key="shop" value="cosmetics"/>
+        <key key="brand" value="아리따움"/>
+        <key key="brand:en" value="Aritaum"/>
+        <key key="operator" value="아모레퍼시픽"/>
+		<key key="operator:en" value="Amorepacific"/>
+		
+        <text default="아리따움" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="아리따움" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="Aritaum" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+        <reference ref="level_1_default"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00,10:00-22:00,"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+        <key key="website" value="https://www.aritaum.com"/>
+    </item>
+	
+	<item icon="presets/shop/cosmetics.svg" name="Etude House" ko.name="에뛰드하우스" type="node,relation,closedway,multipolygon">
+        <label text="Etude House" ko.text="에뛰드하우스"/>
+        <key key="shop" value="cosmetics"/>
+        <key key="brand" value="에뛰드하우스"/>
+        <key key="brand:en" value="Etude House"/>
+        <key key="operator" value="주식회사 에뛰드"/>
+		<key key="operator:en" value="Etude Corporation"/>
+		
+        <text default="에뛰드하우스" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="에뛰드하우스" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="Etude House" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="エチュードハウス"/>
+        <reference ref="level_1_default"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00,10:00-22:00,"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+        <key key="website" value="https://www.etudehouse.com"/>
+        <key key="brand:wikidata" value="Q16174973"/>
+        <key key="brand:wikipedia" value="ko:에뛰드하우스"/>
+    </item>
 
     <item icon="presets/shop/cosmetics.svg" name="Olive Young" ko.name="올리브영" type="node,relation,closedway,multipolygon">
         <label text="Olive Young" ko.text="올리브영"/>
