@@ -2812,10 +2812,11 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikipedia" value="ko:미니스톱"/>
     </item>
 
-    <item icon="Franchises_in_Korea/logo/Seven_Eleven.svg" name="Seven-Eleven" ko.name="세븐일레븐" type="node,relation,closedway,multipolygon">
-        <label text="Seven-Eleven" ko.text="세븐일레븐"/>
+    <item icon="Franchises_in_Korea/logo/Seven_Eleven.svg" name="7-Eleven" ko.name="세븐일레븐" type="node,relation,closedway,multipolygon">
+        <label text="7-Eleven" ko.text="세븐일레븐"/>
         <key key="shop" value="convenience"/>
-        <key key="brand" value="7 ELEVEN"/>
+		<key key="brand" value="세븐일레븐"/>
+        <key key="brand:en" value="7-Eleven"/>
         <key key="operator" value="코리아세븐"/>
         <key key="operator:en" value="KOREA SEVEN"/>
 		
