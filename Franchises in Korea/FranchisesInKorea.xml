@@ -427,7 +427,7 @@ If you want to share your custom tags with other users, please look through the 
 		<space />
 		<reference ref="atm_default"/>
 		
-		<key key="website" value="https://www.kdb.co.kr/ih/simpleJsp.do"/>
+		<key key="website" value="https://www.kdb.co.kr"/>
 		<key key="brand:wikidata" value="Q4409074"/>
 		<key key="brand:wikipedia" value="ko:한국산업은행"/>
 	</item>
@@ -450,7 +450,7 @@ If you want to share your custom tags with other users, please look through the 
 		<space />
 		<reference ref="atm_default"/>
 		
-		<key key="website" value="https://www.shinhan.com/index.jsp"/>
+		<key key="website" value="https://www.shinhan.com"/>
 		<key key="brand:wikidata" value="Q484047"/>
 		<key key="brand:wikipedia" value="ko:KEB하나은행"/>
 	</item>
@@ -476,7 +476,7 @@ If you want to share your custom tags with other users, please look through the 
 		<space />
 		<reference ref="atm_default"/>
 		
-		<key key="website" value="https://banking.nonghyup.com/nhbank.html"/>
+		<key key="website" value="https://banking.nonghyup.com"/>
 		<key key="brand:wikidata" value="Q15283673"/>
 		<key key="brand:wikipedia" value="ko:NH농협은행"/>
 	</item>
@@ -498,7 +498,7 @@ If you want to share your custom tags with other users, please look through the 
 		<space />
 		<reference ref="atm_default"/>
 		
-		<key key="website" value="https://www.standardchartered.co.kr/np/kr/Intro.jsp"/>
+		<key key="website" value="https://www.standardchartered.co.kr"/>
 		<key key="brand:wikidata" value="Q625531"/>
 		<key key="brand:wikipedia" value="ko:한국스탠다드차타드은행"/>
 	</item>
@@ -542,7 +542,7 @@ If you want to share your custom tags with other users, please look through the 
 		<space />
 		<reference ref="atm_default"/>
 		
-		<key key="website" value="https://www.shinhan.com/index.jsp"/>
+		<key key="website" value="https://www.shinhan.com"/>
 		<key key="brand:wikidata" value="Q487230"/>
 		<key key="brand:wikipedia" value="ko:신한은행"/>
 	</item>
@@ -592,7 +592,7 @@ If you want to share your custom tags with other users, please look through the 
 		<space />
 		<reference ref="atm_default"/>
 		
-		<key key="website" value="https://www.koreaexim.go.kr/site/main/index001"/>
+		<key key="website" value="https://www.koreaexim.go.kr"/>
 		<key key="brand:wikidata" value="Q4501812"/>
 		<key key="brand:wikipedia" value="ko:한국수출입은행"/>
 	</item>
@@ -868,7 +868,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="https://www.tlj.co.kr:7008/product/new.asp"/>
+        <key key="website" value="https://www.tlj.co.kr:7008"/>
         <key key="brand:wikidata" value="Q3535609"/>
         <key key="brand:wikipedia" value="ko:뚜레쥬르"/>
     </item>
@@ -897,7 +897,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="https://www.paris.co.kr/main"/>
+        <key key="website" value="https://www.paris.co.kr"/>
         <key key="brand:wikidata" value="Q12621461"/>
         <key key="brand:wikipedia" value="ko:파리바게뜨"/>
     </item>
@@ -1228,7 +1228,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://www.bonjuk.co.kr/default.asp"/>
+        <key key="website" value="http://www.bonjuk.co.kr"/>
     </item>
 
     <item icon="Franchises_in_Korea/icon/Juk.svg" name="JukStory" ko.name="죽이야기" type="node,relation,closedway,multipolygon">
@@ -1257,7 +1257,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://www.jukstory.com/main.php"/>
+        <key key="website" value="http://www.jukstory.com"/>
     </item>
 </group>
 
@@ -1323,7 +1323,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://www.istarbucks.co.kr/index.do"/>
+        <key key="website" value="http://www.istarbucks.co.kr"/>
         <key key="brand:wikidata" value="Q37158"/>
         <key key="brand:wikipedia" value="ko:스타벅스"/>
     </item>
@@ -1512,7 +1512,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://www.coffeebeankorea.com/main/main.asp"/>
+        <key key="website" value="http://www.coffeebeankorea.com"/>
         <key key="brand:wikidata" value="Q1141384"/>
         <key key="brand:wikipedia" value="ko:커피빈 앤드 티리프"/>
     </item>
@@ -1574,7 +1574,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="https://www.twosome.co.kr:7009/microsite/2018/christmas/index.asp"/>
+        <key key="website" value="https://www.twosome.co.kr:7009"/>
         <key key="brand:wikidata" value="Q12621301"/>
         <key key="brand:wikipedia" value="ko:투썸플레이스"/>
     </item>
@@ -1606,7 +1606,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://www.caffe-pascucci.co.kr/index.asp"/>
+        <key key="website" value="http://www.caffe-pascucci.co.kr"/>
         <key key="brand:wikidata" value="Q5017191"/>
         <key key="brand:wikipedia" value="ko:파스쿠치"/>
     </item>
@@ -1741,7 +1741,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://www.momstouch.co.kr/main/main.php"/>
+        <key key="website" value="http://www.momstouch.co.kr"/>
         <key key="brand:wikidata" value="Q23044856"/>
         <key key="brand:wikipedia" value="ko:맘스터치"/>
     </item>
@@ -1776,7 +1776,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://www.mcdonalds.co.kr/www/kor/main/main.do"/>
+        <key key="website" value="http://www.mcdonalds.co.kr"/>
         <key key="brand:wikidata" value="Q38076"/>
         <key key="brand:wikipedia" value="ko:맥도날드"/>
     </item>
@@ -1940,7 +1940,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="https://www.bbq.co.kr/page/order/menu-list.asp"/>
+        <key key="website" value="https://www.bbq.co.kr"/>
         <key key="brand:wikidata" value="Q12616311"/>
         <key key="brand:wikipedia" value="ko:제너시스 (기업)"/>
     </item>
@@ -2032,7 +2032,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-		<key key="website" value="http://www.gangjung.com/main/index.asp"/>
+		<key key="website" value="http://www.gangjung.com"/>
     </item>
 	
 	<item icon="presets/food/fast_food.svg" name="KyoChon Chicken" ko.name="교촌치킨" type="node,relation,closedway,multipolygon">
@@ -2061,7 +2061,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://www.kyochon.com/main/"/>
+        <key key="website" value="http://www.kyochon.com"/>
         <key key="brand:wikidata" value="Q6451885"/>
         <key key="brand:wikipedia" value="ko:교촌 (브랜드)"/>
     </item>
@@ -2123,7 +2123,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="https://nenechicken.com/17_new/index.asp"/>
+        <key key="website" value="https://nenechicken.com"/>
         <key key="brand:wikidata" value="Q61096524"/>
         <key key="brand:wikipedia" value="ko:네네치킨"/>
     </item>
@@ -2183,7 +2183,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://www.codd.co.kr/site/"/>
+        <key key="website" value="http://www.codd.co.kr"/>
         <key key="brand:wikidata" value="Q16188100"/>
         <key key="brand:wikipedia" value="ko:땅땅치킨"/>
     </item>
@@ -2300,7 +2300,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://www.momstouch.co.kr/main/main.php"/>
+        <key key="website" value="http://www.momstouch.co.kr"/>
         <key key="brand:wikidata" value="Q23044856"/>
         <key key="brand:wikipedia" value="ko:맘스터치"/>
     </item>
@@ -2331,7 +2331,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://www.mexican.co.kr/2018/intro.html"/>
+        <key key="website" value="http://www.mexican.co.kr"/>
     </item>
 	
 	<item icon="presets/food/fast_food.svg" name="Mexicana" ko.name="멕시카나" type="node,relation,closedway,multipolygon">
@@ -2360,7 +2360,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="https://www.mexicana.co.kr:50010/main/"/>
+        <key key="website" value="https://www.mexicana.co.kr:50010"/>
     </item>
 	
 	<item icon="presets/food/fast_food.svg" name="Mexican Chicken(멕)" ko.name="멕시칸치킨" type="node,relation,closedway,multipolygon">
@@ -2445,7 +2445,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://www.mythunder.co.kr/board/index.php?board=map_01"/>
+        <key key="website" value="http://www.mythunder.co.kr"/>
     </item>
 	
 	<item icon="presets/food/fast_food.svg" name="Ajuker Chicken" ko.name="아주커치킨" type="node,relation,closedway,multipolygon">
@@ -2474,7 +2474,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://www.ajuker.co.kr/default/"/>
+        <key key="website" value="http://www.ajuker.co.kr"/>
     </item>
 	
 	<item icon="presets/food/fast_food.svg" name="Jangmonim Chicken" ko.name="장모님치킨" type="node,relation,closedway,multipolygon">
@@ -2503,7 +2503,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://jangmonim.co.kr/default/"/>
+        <key key="website" value="http://jangmonim.co.kr"/>
     </item>
 	
 	<item icon="presets/food/fast_food.svg" name="Gcova Chicken" ko.name="지코바치킨" type="node,relation,closedway,multipolygon">
@@ -2683,7 +2683,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="https://pelicana.co.kr/main.html"/>
+        <key key="website" value="https://pelicana.co.kr"/>
         <key key="brand:wikidata" value="Q17575847"/>
         <key key="brand:wikipedia" value="ko:페리카나"/>
     </item>
@@ -2716,7 +2716,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://pncg.co.kr/common/main.php"/>
+        <key key="website" value="http://pncg.co.kr"/>
     </item>
 	
 	<item icon="presets/food/fast_food.svg" name="Hosigi" ko.name="호식이두마리치킨" type="node,relation,closedway,multipolygon">
@@ -2893,7 +2893,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://cu.bgfretail.com/index.do"/>
+        <key key="website" value="http://cu.bgfretail.com"/>
         <key key="brand:wikidata" value="Q12580836"/>
         <key key="brand:wikipedia" value="ko:CU (편의점)"/>
     </item>
@@ -2922,7 +2922,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://gs25.gsretail.com/gscvs/ko/main"/>
+        <key key="website" value="http://gs25.gsretail.com"/>
         <key key="brand:wikidata" value="Q624041"/>
         <key key="brand:wikipedia" value="ko:GS25"/>
     </item>
@@ -3034,7 +3034,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="internet"/>
 		<reference ref="wi-fi"/>
 		
-        <key key="website" value="http://www.oliveyoung.co.kr/store/main/main.do"/>
+        <key key="website" value="http://www.oliveyoung.co.kr"/>
         <key key="brand:wikidata" value="Q55643246"/>
         <key key="brand:wikipedia" value="ko:올리브영"/>
     </item>
