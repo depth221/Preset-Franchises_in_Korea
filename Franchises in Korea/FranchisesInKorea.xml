@@ -906,6 +906,8 @@ If you want to share your custom tags with other users, please look through the 
 
 
 <group icon="presets/vehicle/fuel.svg" name="Fuel" ko.name="주유소/충전소">
+
+<group icon="presets/vehicle/fuel.svg" name="Fuel" ko.name="주유소">
 	<item icon="presets/vehicle/fuel.svg" name="EX Gas Station" ko.name="EX 주유소" type="node,relation,closedway,multipolygon">
         <label text="EX Gas Station" ko.text="EX 주유소"/>
 		<reference ref="unofficial_en"/>
@@ -1079,9 +1081,10 @@ If you want to share your custom tags with other users, please look through the 
 		<key key="brand:wikidata" value="Q5962649"/>
         <key key="brand:wikipedia" value="ko:현대오일뱅크"/>
     </item>
+</group>
 
-<separator/><!--────────────────────────────────────────────────────────────────────────────-->
 
+<group icon="presets/vehicle/fuel.svg" name="Fuel" ko.name="충전소">
 	<item icon="presets/vehicle/fuel.svg" name="E1" type="node,relation,closedway,multipolygon">
         <label text="E1"/>
         <key key="amenity" value="fuel"/>
@@ -1199,6 +1202,7 @@ If you want to share your custom tags with other users, please look through the 
 		<key key="brand:wikidata" value="Q5962649"/>
         <key key="brand:wikipedia" value="ko:현대오일뱅크"/>
     </item>
+</group>
 </group>
 
 
