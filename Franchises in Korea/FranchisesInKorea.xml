@@ -1328,6 +1328,37 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikidata" value="Q12624133"/>
         <key key="brand:wikipedia" value="ko:빽다방"/>
     </item>
+	
+	<item icon="presets/food/cafe.svg" name="Sulbing" ko.name="설빙" type="node,relation,closedway,multipolygon">
+        <label text="Sulbing" ko.text="설빙"/>
+        <key key="amenity" value="cafe"/>
+        <key key="cuisine" value="ice_flake;coffee_shop"/>
+        <key key="brand" value="설빙"/>
+        <key key="brand:en" value="Sulbing"/>
+        <key key="operator" value="(주)설빙"/>
+		
+        <text default="설빙" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="Sulbing" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+        <text default="설빙" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <reference ref="level_1_default"/>
+        <reference ref="takeaway_including_no"/>
+		<reference ref="delivery"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 07:00-23:00; Sa-Su 08:00-23:00,07:00-23:00,08:00-23:00"/>
+		<reference ref="wheelchair"/>
+		<reference ref="outdoor_seating"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+        <key key="website" value="https://sulbing.com/"/>
+        <key key="brand:wikidata" value="Q18156373"/>
+        <key key="brand:wikipedia" value="ko:설빙 (기업)"/>
+    </item>
 
     <item icon="presets/food/cafe.svg" name="Starbucks" ko.name="스타벅스" type="node,relation,closedway,multipolygon">
         <label text="Starbucks" ko.text="스타벅스"/>
