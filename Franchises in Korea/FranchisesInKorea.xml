@@ -873,6 +873,35 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikidata" value="Q3535609"/>
         <key key="brand:wikipedia" value="ko:뚜레쥬르"/>
     </item>
+	
+	<item icon="presets/shop/groceries/bakery.svg" name="Isaac Toast" ko.name="이삭토스트" type="node,relation,closedway,multipolygon">
+        <label text="Isaac Toast" ko.text="이삭토스트"/>
+        <key key="shop" value="bakery"/>
+        <key key="brand" value="이삭토스트"/>
+        <key key="brand:en" value="Isaac Toast"/>
+        <key key="operator" value="(주)이삭"/>
+		<key key="operator:en" value="Isaac Inc."/>
+		
+        <text default="이삭토스트" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="이삭토스트" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="Isaac Toast" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+        <reference ref="level_1_default"/>
+        <reference ref="takeaway"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="06:30-24:00,07:30-24:00,08:00-24:00,08:00-22:00,07:00-21:30"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+        <key key="website" value="http://www.isaac-toast.co.kr/"/>
+        <key key="brand:wikidata" value="Q25939030"/>
+        <key key="brand:wikipedia" value="ko:이삭토스트"/>
+    </item>
 
     <item icon="presets/shop/groceries/bakery.svg" name="Paris Baguette" ko.name="파리바게뜨" type="node,relation,closedway,multipolygon">
         <label text="Paris Baguette" ko.text="파리바게뜨"/>
