@@ -1267,6 +1267,37 @@ If you want to share your custom tags with other users, please look through the 
 </group>
 
 <group icon="presets/food/cafe.svg" name="Cafe" ko.name="카페">
+	<item icon="presets/food/cafe.svg" name="dal.komm coffee" ko.name="달콤커피" type="node,relation,closedway,multipolygon">
+        <label text="dal.komm coffee" ko.text="달콤커피"/>
+        <key key="amenity" value="cafe"/>
+        <key key="cuisine" value="coffee_shop"/>
+        <key key="brand" value="달콤커피"/>
+        <key key="brand:en" value="dal.komm coffee"/>
+        <key key="operator" value="(주)달콤"/>
+		
+        <text default="달콤커피" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="dal.komm coffee" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+        <text default="달콤커피" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <reference ref="level_1_default"/>
+        <reference ref="takeaway_including_no"/>
+		<reference ref="delivery"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="Mo-Fr 07:00-23:00; Sa-Su 08:00-23:00,07:00-23:00,08:00-23:00"/>
+		<reference ref="wheelchair"/>
+		<reference ref="outdoor_seating"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+        <key key="website" value="http://www.dalkomm.com/"/>
+        <key key="brand:wikidata" value="Q28699795"/>
+        <key key="brand:wikipedia" value="ko:달콤커피"/>
+    </item>
+	
     <item icon="presets/food/cafe.svg" name="Paik's Coffee" ko.name="빽다방" type="node,relation,closedway,multipolygon">
         <label text="Starbucks" ko.text="스타벅스"/>
         <key key="amenity" value="cafe"/>
