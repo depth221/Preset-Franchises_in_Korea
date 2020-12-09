@@ -1568,7 +1568,7 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikipedia" value="ko:설빙 (기업)"/>
     </item>
 
-    <item icon="Franchises_in_Korea/logo/Starbucks.jpg" name="Starbucks" ko.name="스타벅스" type="node,relation,closedway,multipolygon">
+    <item icon="Franchises_in_Korea/logo/StarBucks.jpg" name="Starbucks" ko.name="스타벅스" type="node,relation,closedway,multipolygon">
         <label text="Starbucks" ko.text="스타벅스"/>
         <key key="amenity" value="cafe"/>
         <key key="cuisine" value="coffee_shop"/>
