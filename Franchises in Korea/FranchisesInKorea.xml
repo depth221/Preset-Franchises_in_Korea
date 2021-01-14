@@ -2,7 +2,7 @@
 <presets
 xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
 author="LuxuryCoop"
-version="1_2020-12-10"
+version="1_2021-01-15"
 description="Main franchises in South Korea"
 ko.description="대한민국 내의 주요 프랜차이즈"
 shortdescription="Franchises in Korea"
@@ -832,6 +832,7 @@ If you want to share your custom tags with other users, please look through the 
 	</item>
 </group>
 
+
 <group icon="presets/shop/electronics.svg" name="Electronics Service Center" ko.name="전자제품 A/S 센터">
 	<item icon="Franchises_in_Korea/logo/LG.png" name="LG Best Shop" ko.name="LG 베스트샵" type="node,relation,closedway,multipolygon">
 		<label text="LG Best Shop" ko.text="LG 베스트샵"/>
@@ -912,6 +913,7 @@ If you want to share your custom tags with other users, please look through the 
 	</item>
 </group>
 
+
 <group icon="presets/shop/electronics.svg" name="Electronics Shop" ko.name="전자제품 판매점">
 	<item icon="Franchises_in_Korea/logo/LG.png" name="LG Best Shop" ko.name="LG 베스트샵" type="node,relation,closedway,multipolygon">
 		<label text="LG Best Shop" ko.text="LG 베스트샵"/>
@@ -990,6 +992,7 @@ If you want to share your custom tags with other users, please look through the 
 		<reference ref="wi-fi"/>
 	</item>
 </group>
+
 
 <group icon="presets/shop/groceries/bakery.svg" name="Bakery" ko.name="제과점">
 	<item icon="presets/shop/groceries/bakery.svg" name="Dunkin' Donuts" ko.name="던킨도너츠" type="node,relation,closedway,multipolygon">
@@ -1114,8 +1117,6 @@ If you want to share your custom tags with other users, please look through the 
 
 
 <group icon="presets/vehicle/fuel.svg" name="Fuel" ko.name="주유소/충전소">
-
-<group icon="presets/vehicle/fuel.svg" name="Fuel" ko.name="주유소">
 	<item icon="presets/vehicle/fuel.svg" name="EX Gas Station" ko.name="EX 주유소" type="node,relation,closedway,multipolygon">
         <label text="EX Gas Station" ko.text="EX 주유소"/>
 		<reference ref="unofficial_en"/>
@@ -1289,10 +1290,9 @@ If you want to share your custom tags with other users, please look through the 
 		<key key="brand:wikidata" value="Q5962649"/>
         <key key="brand:wikipedia" value="ko:현대오일뱅크"/>
     </item>
-</group>
-
-
-<group icon="presets/vehicle/fuel.svg" name="Fuel" ko.name="충전소">
+	
+	<separator/><!--────────────────────────────────────────────────────────────────────────────-->
+	
 	<item icon="presets/vehicle/fuel.svg" name="E1" type="node,relation,closedway,multipolygon">
         <label text="E1"/>
         <key key="amenity" value="fuel"/>
@@ -1411,7 +1411,6 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikipedia" value="ko:현대오일뱅크"/>
     </item>
 </group>
-</group>
 
 
 <group icon="Franchises_in_Korea/icon/Juk.svg" name="Congee(Juk)" ko.name="죽">
@@ -1473,6 +1472,7 @@ If you want to share your custom tags with other users, please look through the 
         <key key="website" value="http://www.jukstory.com"/>
     </item>
 </group>
+
 
 <group icon="presets/food/cafe.svg" name="Cafe" ko.name="카페">
 	<item icon="presets/food/cafe.svg" name="dal.komm coffee" ko.name="달콤커피" type="node,relation,closedway,multipolygon">
@@ -1921,6 +1921,42 @@ If you want to share your custom tags with other users, please look through the 
 
 
 <group icon="presets/food/fast_food.svg" name="Fast Foods" ko.name="패스트푸드">
+<group icon="presets/food/fast_food.svg" name="Sandwich" ko.name="샌드위치">
+	<item icon="presets/food/fast_food.svg" name="서브웨이" type="node,relation,closedway,multipolygon">
+        <label text="서브웨이"/>
+        <key key="amenity" value="fast_food"/>
+        <key key="cuisine" value="sandwich;cookie"/>
+        <key key="brand" value="서브웨이"/>
+		<key key="brand" value="Subway"/>
+        <key key="operator" value="SUBWAY"/>
+		
+        <text default="서브웨이" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="서브웨이" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+        <text default="Subway" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:ja" value="サブウェイ"/>
+		<key key="name:zh" value="赛百味"/>
+		<key key="int_name" value="Subway"/>
+        <reference ref="level_1_default"/>
+        <reference ref="takeaway"/>
+		<reference ref="delivery"/>
+		<reference ref="drive_through"/>
+        <combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="10:00-23:00,10:00-24:00,24/7"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+        <key key="website" value="https://www.subway.co.kr/"/>
+        <key key="brand:wikidata" value="Q244457"/>
+        <key key="brand:wikipedia" value="ko:써브웨이"/>
+    </item>
+</group>
+
 <group icon="presets/food/fast_food.svg" name="Burger" ko.name="햄버거">
 	<item icon="Franchises_in_Korea/logo/KFC.png" name="KFC" type="node,relation,closedway,multipolygon">
         <label text="KFC"/>
@@ -3206,7 +3242,37 @@ If you want to share your custom tags with other users, please look through the 
 </group>
 
 
-<group icon="presets/shop/cosmetics.svg" name="Cosmetics" ko.name="화장품">
+<group icon="presets/shop/clothes.svg" name="Fashion" ko.name="패션">
+	<group icon="presets/shop/clothes.svg" name="Clothes" ko.name="의류">
+	<item icon="presets/shop/clothes.svg" name="Naughty Cat" ko.name="못된고양이" type="node,relation,closedway,multipolygon">
+		<label text="Naughty Cat" ko.text="못된고양이"/>
+		<key key="shop" value="clothes"/>
+		<key key="brand" value="못된고양이"/>
+		<key key="brand:en" value="n-cat"/>
+		<key key="operator" value="(주)엔캣"/>
+		
+		<text default="못된고양이" key="name" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="못된고양이" key="name:ko" text="Name(Korean)" ko.text="점포명(한국어)"/>
+		<text default="Naughty Cat" key="name:en" text="Name(English)" ko.text="점포명(영어)"/>
+		<key key="name:zh" value="悪いネコ"/>
+		<key key="name:zh" value="淘气小猫"/>
+		<reference ref="level_1_default"/>
+		<combo key="opening_hours" text="Opening Hours" ko.text="영업 시간" values="09:00-22:00,10:00-22:00,"/>
+		<reference ref="wheelchair"/>
+		
+		<item_separator />
+		<reference ref="payment"/>
+		<reference ref="payment_optional"/>
+		
+		<item_separator />
+		<reference ref="internet"/>
+		<reference ref="wi-fi"/>
+		
+		<key key="website" value="http://n-cat.co.kr/wordpress/"/>
+	</item>
+	</group>
+
+	<group icon="presets/shop/cosmetics.svg" name="Cosmetics" ko.name="화장품">
     <item icon="presets/shop/cosmetics.svg" name="Skinfood" ko.name="스킨푸드" type="node,relation,closedway,multipolygon">
         <label text="Skinfood" ko.text="스킨푸드"/>
         <key key="shop" value="cosmetics"/>
@@ -3343,6 +3409,7 @@ If you want to share your custom tags with other users, please look through the 
         <key key="brand:wikidata" value="Q16176002"/>
         <key key="brand:wikipedia" value="ko:이니스프리"/>
     </item>
+	</group>
 </group>
 
 </group>
